@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+#wrap {
+	opacity: 1 !important;
+	transition: opacity .2s
+}
+
+#global-navigation.ready {
+	display: block !important
+}
+
+html.page-cover-support.gh-top .gnb-title p,
+html.page-cover-support.gh-top .gnb-title span {
+	color: rgba(255, 255, 255, 0) !important
+}
+
+.page-cover {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: -20px;
+	width: calc(100% + 40px);
+	height: 100%
+}
+
+html:not(.page-cover-support) .page-cover {
+	display: none !important
+}
+
+.page-cover:after,
+.page-cover div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+
+.page-cover:after {
+	content: "";
+	background-color: rgba(0, 0, 0, .5)
+}
+
+html.gpu.effect:not(.edge-browser):not(.goog) .page-cover:after {
+	will-change: -webkit-backdrop-filter, backdrop-filter;
+	-webkit-backdrop-filter: blur(20px) saturate(180%);
+	backdrop-filter: blur(20px) saturate(180%)
+}
+
+.page-cover {
+	background: 50% 50%/125% no-repeat
+}
+
+html.gpu.no-effect:not(.edge-browser):not(.msie) .page-cover {
+	will-change: transform, filter;
+	filter: saturate(180%)
+}
+
+.page-cover div {
+	background: 50% 50%/cover no-repeat
+}
+
+.parent-page-cover {
+	transform: scale(1.25)
+}
+
+.small-cover,
+.medium-cover,
+.small-slider-image, 
+.medium-slider-image {
+	display: none
+}
+
+html.gpu:not(.edge-browser):not(.msie) .small-cover,
+html.gpu:not(.edge-browser):not(.msie) .medium-cover,
+html.gpu:not(.edge-browser):not(.msie) .large-cover {
+	display: none !important
+}
+
+html.gpu.no-effect:not(.msie) .parent-page-cover,
+html.gpu.edge-browser .parent-page-cover,
+html.gpu.goog .parent-page-cover {
+	will-change: transform, filter;
+	filter: blur(20px)
+}
+
+html.gpu.effect .parent-page-cover {
+	will-change: transform
+}
+
+html.gpu.page-cover-support #tt-body-guestbook #global-navigation {
+	transition: background-color .2s
+}
+
+html.gpu.effect.page-cover-support:not(.goog) #tt-body-guestbook #global-navigation {
+	transition: background-color .2s, -webkit-backdrop-filter .2s, backdrop-filter .2s
+}
+
+html.page-cover-support.gh-top #tt-body-guestbook #global-navigation {
+	background-color: rgba(0, 0, 0, 0) !important
+}
+
+html.gpu.effect.page-cover-support.gh-top #tt-body-guestbook #global-navigation {
+	-webkit-backdrop-filter: blur(0) saturate(100%);
+	backdrop-filter: blur(0) saturate(100%)
+}
+
+html.page-cover-support.gh-top #tt-body-guestbook .open-sidebar:before,
+html.page-cover-support.gh-top #tt-body-guestbook .open-sidebar:after {
+	color: #fff
+}
+
+html.page-cover-support.gh-top.no-touch #tt-body-guestbook .open-sidebar:hover:before,
+html.page-cover-support.gh-top.no-touch #tt-body-guestbook .open-sidebar:hover:after,
+html.page-cover-support.gh-top.touch #tt-body-guestbook .open-sidebar.hover:before,
+html.page-cover-support.gh-top.touch #tt-body-guestbook .open-sidebar.hover:after {
+	color: rgba(255, 255, 255, .8)
+}
+
+
+
+html.page-cover-support.gh #tt-body-guestbook .go-to-index-visual .gnb-title p,
+html.page-cover-support.gh #tt-body-guestbook .notice-go-to-index span {
+	color: #fff !important
+}
+
+
+
+html.page-cover-support #tt-body-guestbook #global-header,
+html.page-cover-support #tt-body-guestbook #global-header a {
+	color: #fff
+}
+
+html.page-cover-support.no-touch #tt-body-guestbook #global-header a:hover
+html.page-cover-support.touch #tt-body-guestbook #global-header a.hover {
+	color: rgba(255, 255, 255, .8)
+}
+
+html.page-cover-support #tt-body-guestbook #global-header {
+	margin-bottom: 40px
+}
+
+
+
+.guestbook-content {
+	margin-left: -20px;
+	margin-right: -20px
+}
+
+.guestbook-content .submit-comment:before {
+	transform: rotate(180deg)
+}
+
+
+
+/* 주중 */
+
+html.day .page-cover {
+	background-color: #222
+}
+
+
+
+/* 여명 */
+
+html.dawn .page-cover {
+	background-color: #22201e
+}
+
+
+
+/* 밤 */
+
+html.night .page-cover {
+	background-color: #181818
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+	
+	html.night .page-cover {
+		background-color: #181818
+	}
+	
+}
+
+
+
+@media (max-width: 1000px) {
+	
+	.large-cover,
+	.small-cover {
+		display: none
+	}
+	
+	.medium-cover {
+		display: block
+	}
+	
+}
+
+@media (max-width: 640px) {
+
+	.guestbook-content .comment-form-wrap {
+		margin-top: 0
+	}
+	
+}
+
+@media (max-width: 460px) {
+	
+	.large-cover,
+	.medium-cover {
+		display: none
+	}
+	
+	.small-cover {
+		display: block
+	}
+
+}
+
+@media (max-width: 400px) {
+	
+	.guestbook-content {
+		margin-left: -5vw;
+		margin-right: -5vw
+	}
+	
+}
+
+@media (max-width: 320px) {
+	
+	.guestbook-content {
+		margin-left: -16px;
+		margin-right: -16px
+	}
+	
+}

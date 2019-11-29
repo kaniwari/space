@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="ko" class="<s_if_var_appearance>[##_var_appearance_##]</s_if_var_appearance><s_if_var_trademark> trademark-support</s_if_var_trademark><s_if_var_view-more> view-more-support</s_if_var_view-more><s_if_var_progress-bar> progress-bar-support</s_if_var_progress-bar><s_if_var_page-cover> [##_var_page-cover_##]</s_if_var_page-cover><s_if_var_page-cover-image> altcover-support [##_var_select-alt-cover_##]</s_if_var_page-cover-image><s_if_var_page-altcover-only> altcover-only</s_if_var_page-altcover-only> [##_var_activities_##]<s_if_var_naver> enable-naver-subscription</s_if_var_naver> gh-top hide-sidebar hide-blog-info<s_if_var_fixed-sidebar> [##_var_sidebar-position_##] [##_var_sidebar-order_##]</s_if_var_fixed-sidebar><s_if_var_theme-color> theme-color</s_if_var_theme-color> deptheffect">
+	<head>
+		<!-- Version 11.3.5 -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"><s_if_var_meta1>
+		[##_var_meta1_##]</s_if_var_meta1><s_if_var_meta2>
+		[##_var_meta2_##]</s_if_var_meta2><s_if_var_meta3>
+		[##_var_meta3_##]</s_if_var_meta3><s_if_var_meta4>
+		[##_var_meta4_##]
+		</s_if_var_meta4><title>[##_page_title_##]</title>
+		<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]">
+		<script>
+		
+			var $themeColor = "<s_if_var_theme-color>[##_var_theme-color_##]</s_if_var_theme-color><s_not_var_theme-color>transparent</s_not_var_theme-color>",
+				$themeColorOrig = $themeColor.toLowerCase(),
+				$date = new Date();
+			
+			if(document.querySelectorAll("html.dynamic").length > 0) {
+				
+				var $html = document.querySelector("html");
+				
+				if($date.getHours() < 6 || $date.getHours() > 18) {
+					$html.classList.add("night");
+				}
+				
+				else if($date.getHours() == 6 || $date.getHours() == 7 || $date.getHours() == 17 || $date.getHours() == 18) {
+					$html.classList.add("dawn");
+				}
+				
+				else {
+					$html.classList.add("day");
+				};
+				
+			};
+			
+			
+			if($themeColor.toLowerCase() == "transparent") {
+				
+				if(document.querySelectorAll("html.day:not(.sysui)").length > 0) {
+
+					$themeColor = "#f4f4f4";
+
+				}
+
+				else if(document.querySelectorAll("html.dawn").length > 0) {
+
+					$themeColor = "#d9d0c3";
+
+				}
+
+				else if(document.querySelectorAll("html.night").length > 0) {
+
+					$themeColor = "#0e0e0e";
+
+				};
+				
+				if(document.querySelectorAll("html:not(.sysui)").length > 0) {
+				
+					var theme = document.createElement("meta");
+					theme.setAttribute('name', 'theme-color');
+					theme.setAttribute('content', $themeColor);
+
+					document.head.appendChild(theme);
+
+				};
+				
+			}
+			
+			else {
+				
+				var theme = document.createElement("meta");
+					theme.setAttribute('name', 'theme-color');
+					theme.setAttribute('content', $themeColor);
+
+					document.head.appendChild(theme);
+				
+			};
+		
+		</script>
+		<script src="https://t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.2.1.min.js"></script>
+		<s_if_var_adsense-id><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<s_if_var_auto-adsense><script>
+			(adsbygoogle = window.adsbygoogle || []).push({
+				google_ad_client: "[##_var_adsense-id_##]",
+				enable_page_level_ads: true
+			});
+		</script></s_if_var_auto-adsense></s_if_var_adsense-id>
+		<link rel="stylesheet" href="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>style_base.css?fcver=235013">
+		<s_if_var_load-stylecss><link rel="stylesheet" href="./style.css"></s_if_var_load-stylecss>
+		<style>
+			.page-limit-width {
+				max-width: <s_if_var_article-width>[##_var_article-width_##]</s_if_var_article-width><s_not_var_article-width>728</s_not_var_article-width>px !important
+			}
+			
+			<s_if_var_recommendation-alert>
+			@media (max-width: calc(<s_if_var_article-width>[##_var_article-width_##]</s_if_var_article-width><s_not_var_article-width>728</s_not_var_article-width>px + 800px)) {
+				
+				html.no-gpu body#tt-body-page .recommendation {
+					display: none !important
+				}
+				
+				html.gpu body#tt-body-page .recommendation {
+					opacity: 0 !important
+				}
+			}
+			</s_if_var_recommendation-alert>
+		</style>
+	</head>
+	<body id="[##_body_id_##]">
+		<s_t3>
+		<h1 class="visuallyhidden" aria-hidden="true">[##_title_##]</h1>
+		<del id="measuring" style="display:none" aria-hidden="true">
+			<span class="measuring"><span></span></span>
+		</del>
+		<del id="gpu-support" style="display:none" aria-hidden="true">
+			<span class="gpu-support sidebar-support"></span>
+			<span class="gpu-support blog-info-support"></span>
+		</del>
+		<nav class="scrollbar-support" id="global-navigation">
+			<div class="notice-go-to-index" style="display:none" aria-hidden="true">
+				<span class="icon">이 영역을 누르면 첫 페이지로 이동</span>
+			</div>
+			<div class="gnb-inner">
+				<a class="go-to-index no-text" href="[##_blog_link_##]" role="button" aria-hidden="false">[##_title_##] 블로그의 첫 페이지로 이동</a>
+				<div class="go-to-index-visual" aria-hidden="true">
+					<div class="gnb-title">
+						<p aria-hidden="true">[##_title_##]</p>
+						<s_if_var_trademark>
+						<figure class="trademark" aria-hidden="true"></figure>
+						</s_if_var_trademark>
+					</div>
+				</div>
+				<div class="gnb-left">
+					<ul class="fc-list">
+						<li><button class="fc-icon fc-appearance fc-button open-sidebar" data-func="open-sidebar">사이드바 열기</button></li>
+					</ul>
+				</div>
+				<div class="gnb-center">
+					<div class="gnb-title">
+						<a class="gnb-blog-link no-text fc-button" href="javascript:;" data-func="go-to-top" role="button">페이지 맨 위로 올라가기</a>
+						<p aria-hidden="true">[##_title_##]</p>
+						<span aria-hidden="true">[##_desc_##]</span>
+						<s_if_var_trademark>
+						<figure class="trademark" aria-hidden="true"></figure>
+						</s_if_var_trademark>
+					</div>
+				</div>
+				<div class="gnb-right">
+					<button class="no-text fc-button fc-appearance blogger-toggle" data-func="open-blog-info">[##_blogger_##] 블로그 정보 보기</button>
+					<div class="gnb-blogger-icon" data-style="background-image:url(//img1.daumcdn.net/thumb/R150x0/?fname=[##_image_##])" aria-hidden="true"></div>
+				</div>
+			</div>
+		</nav>
+		<main class="scrollbar-support" id="wrap" aria-hidden="false">
+			<s_cover_group>
+			<s_cover_rep>
+			<s_cover name="customized-index">
+			<div class="customized cover-item for-[##_var_list-appearance_##]">
+				<header id="global-header">
+					<div class="gh-text">
+						<s_if_var_trademark><figure class="trademark-header" aria-hidden="true"></figure></s_if_var_trademark>
+						<h2>[##_title_##]</h2>
+					</div>
+					<del class="header-height" aria-hidden="true"></del>
+				</header>
+				<div class="fc-index-width for-cover-item [##_var_list-appearance_##]<s_if_var_hidden-text> hide-text</s_if_var_hidden-text>">
+					<ul class="index-width-support fc-list">
+						<s_cover_item>
+						<li class="index-item article-item">
+							<div class="index-item-wrap">
+								<a class="no-text index-item-link" href="[##_cover_item_url_##]" role="button">[##_cover_item_title_##]</a>
+								<div class="index-item-visual" style="display:none" aria-hidden="true">
+									<div class="index-item-text">
+										<h3>[##_cover_item_title_##]</h3>
+										<s_cover_item_article_info>
+										<span class="digit">[##_cover_item_simple_date_##]</span>
+										</s_cover_item_article_info>
+										<p class="index-item-summary">[##_cover_item_summary_##]</p>
+									</div>
+									<figure class="index-item-thumbnail" data-style="<s_cover_item_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_cover_item_thumbnail_##]);background-position:50% 50%;background-size:cover</s_cover_item_thumbnail>"></figure>
+								</div>
+							</div>
+						</li>
+						</s_cover_item>
+						<li class="index-item blank-item blank1" aria-hidden="true"></li>
+						<li class="index-item blank-item blank2" aria-hidden="true"></li>
+						<li class="index-item blank-item blank3" aria-hidden="true"></li>
+						<li class="index-item blank-item blank4" aria-hidden="true"></li>
+					</ul>
+				</div>
+			</div>
+			</s_cover>
+			<s_cover name="slider">
+			<div class="index-item-slider cover-item for-gallery">
+				<ul class="fc-list">
+					<s_cover_item>
+					<li style="display:none" aria-hidden="true">
+						<a class="slider-link no-text" href="[##_cover_item_url_##]" role="button">[##_cover_item_title_##]</a>
+						<div class="slider-visual" aria-hidden="true">
+							<s_cover_item_thumbnail>
+							<div class="slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R48x0/?fname=[##_cover_item_thumbnail_##])">
+								<div class="small-slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_cover_item_thumbnail_##])"></div>
+								<div class="medium-slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R1280x0/?fname=[##_cover_item_thumbnail_##])"></div>
+								<div class="large-slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R1920x0/?fname=[##_cover_item_thumbnail_##])"></div>
+							</div>
+							</s_cover_item_thumbnail>
+							<div class="slider-title">
+								<h3>[##_cover_item_title_##]</h3>
+								<p>[##_cover_item_summary_##]</p>
+							</div>
+						</div>
+					</li>
+					</s_cover_item>
+				</ul>
+				<button class="prev-slide fc-icon fc-appearance">이전 슬라이드</button>
+				<button class="next-slide fc-icon fc-appearance">다음 슬라이드</button>
+			</div>
+			</s_cover>
+			<s_cover name="slider-no-desc">
+			<div class="index-item-slider cover-item for-gallery">
+				<ul class="fc-list">
+					<s_cover_item>
+					<li style="display:none" aria-hidden="true">
+						<a class="slider-link no-text" href="[##_cover_item_url_##]" role="button">[##_cover_item_title_##]</a>
+						<div class="slider-visual" aria-hidden="true">
+							<s_cover_item_thumbnail>
+							<div class="slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R48x0/?fname=[##_cover_item_thumbnail_##])">
+								<div class="small-slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_cover_item_thumbnail_##])"></div>
+								<div class="medium-slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R1280x0/?fname=[##_cover_item_thumbnail_##])"></div>
+								<div class="large-slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R1920x0/?fname=[##_cover_item_thumbnail_##])"></div>
+							</div>
+							</s_cover_item_thumbnail>
+							<div class="slider-title"><h3>[##_cover_item_title_##]</h3></div>
+						</div>
+					</li>
+					</s_cover_item>
+				</ul>
+				<button class="prev-slide fc-icon fc-appearance">이전 슬라이드</button>
+				<button class="next-slide fc-icon fc-appearance">다음 슬라이드</button>
+			</div>
+			</s_cover>
+			<s_cover name="fullscreen-slider">
+			<div class="index-item-slider index-fullscreen-slider cover-item for-gallery">
+				<ul class="fc-list">
+					<s_cover_item>
+					<li style="display:none" aria-hidden="true">
+						<a class="slider-link no-text" href="[##_cover_item_url_##]" role="button">[##_cover_item_title_##]</a>
+						<div class="slider-visual" aria-hidden="true">
+							<s_cover_item_thumbnail>
+							<div class="slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R48x0/?fname=[##_cover_item_thumbnail_##])">
+								<div class="small-slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_cover_item_thumbnail_##])"></div>
+								<div class="medium-slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R1280x0/?fname=[##_cover_item_thumbnail_##])"></div>
+								<div class="large-slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R1920x0/?fname=[##_cover_item_thumbnail_##])"></div>
+							</div>
+							</s_cover_item_thumbnail>
+							<div class="slider-title">
+								<h3>[##_cover_item_title_##]</h3>
+								<p>[##_cover_item_summary_##]</p>
+							</div>
+						</div>
+					</li>
+					</s_cover_item>
+				</ul>
+				<button class="prev-slide fc-icon fc-appearance">이전 슬라이드</button>
+				<button class="next-slide fc-icon fc-appearance">다음 슬라이드</button>
+			</div>
+			</s_cover>
+			<s_cover name="fullscreen-slider-no-desc">
+			<div class="index-item-slider index-fullscreen-slider cover-item for-gallery">
+				<ul class="fc-list">
+					<s_cover_item>
+					<li style="display:none" aria-hidden="true">
+						<a class="slider-link no-text" href="[##_cover_item_url_##]" role="button">[##_cover_item_title_##]</a>
+						<div class="slider-visual" aria-hidden="true">
+							<s_cover_item_thumbnail>
+							<div class="slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R48x0/?fname=[##_cover_item_thumbnail_##])">
+								<div class="small-slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_cover_item_thumbnail_##])"></div>
+								<div class="medium-slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R1280x0/?fname=[##_cover_item_thumbnail_##])"></div>
+								<div class="large-slider-image" data-style="background-image:url(//img1.daumcdn.net/thumb/R1920x0/?fname=[##_cover_item_thumbnail_##])"></div>
+							</div>
+							</s_cover_item_thumbnail>
+							<div class="slider-title"><h3>[##_cover_item_title_##]</h3></div>
+						</div>
+					</li>
+					</s_cover_item>
+				</ul>
+				<button class="prev-slide fc-icon fc-appearance">이전 슬라이드</button>
+				<button class="next-slide fc-icon fc-appearance">다음 슬라이드</button>
+			</div>
+			</s_cover>
+			<s_cover name="gallery-list">
+			<div class="cover-item for-gallery">
+				<hr class="page-stroke">
+				<h2 class="cover-title">[##_cover_title_##]</h2>
+				<div class="fc-index-width for-cover-item gallery">
+					<ul class="index-width-support fc-list">
+						<s_cover_item>
+						<li class="index-item article-item">
+							<div class="index-item-wrap">
+								<a class="no-text index-item-link" href="[##_cover_item_url_##]" role="button">[##_cover_item_title_##]</a>
+								<div class="index-item-visual" style="display:none" aria-hidden="true">
+									<div class="index-item-text">
+										<h3>[##_cover_item_title_##]</h3>
+										<s_cover_item_article_info>
+										<span class="digit">[##_cover_item_simple_date_##]</span>
+										</s_cover_item_article_info>
+										<p class="index-item-summary">[##_cover_item_summary_##]</p>
+									</div>
+									<figure class="index-item-thumbnail" data-style="<s_cover_item_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_cover_item_thumbnail_##]);background-position:50% 50%;background-size:cover</s_cover_item_thumbnail>"></figure>
+								</div>
+							</div>
+						</li>
+						</s_cover_item>
+						<li class="index-item blank-item blank1" aria-hidden="true"></li>
+						<li class="index-item blank-item blank2" aria-hidden="true"></li>
+						<li class="index-item blank-item blank3" aria-hidden="true"></li>
+						<li class="index-item blank-item blank4" aria-hidden="true"></li>
+					</ul>
+				</div>
+			</div>
+			</s_cover>
+			<s_cover name="gallery-list-hidden-text">
+			<div class="cover-item for-gallery">
+				<hr class="page-stroke">
+				<h2 class="cover-title">[##_cover_title_##]</h2>
+				<div class="fc-index-width for-cover-item gallery hide-text">
+					<ul class="index-width-support fc-list">
+						<s_cover_item>
+						<li class="index-item article-item">
+							<div class="index-item-wrap">
+								<a class="no-text index-item-link" href="[##_cover_item_url_##]" role="button">[##_cover_item_title_##]</a>
+								<div class="index-item-visual" style="display:none" aria-hidden="true">
+									<div class="index-item-text">
+										<h3>[##_cover_item_title_##]</h3>
+										<s_cover_item_article_info>
+										<span class="digit">[##_cover_item_simple_date_##]</span>
+										</s_cover_item_article_info>
+										<p class="index-item-summary">[##_cover_item_summary_##]</p>
+									</div>
+									<figure class="index-item-thumbnail" data-style="<s_cover_item_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_cover_item_thumbnail_##]);background-position:50% 50%;background-size:cover</s_cover_item_thumbnail>"></figure>
+								</div>
+							</div>
+						</li>
+						</s_cover_item>
+						<li class="index-item blank-item blank1" aria-hidden="true"></li>
+						<li class="index-item blank-item blank2" aria-hidden="true"></li>
+						<li class="index-item blank-item blank3" aria-hidden="true"></li>
+						<li class="index-item blank-item blank4" aria-hidden="true"></li>
+					</ul>
+				</div>
+			</div>
+			</s_cover>
+			<s_cover name="large-gallery-list">
+			<div class="cover-item for-gallery">
+				<hr class="page-stroke">
+				<h2 class="cover-title">[##_cover_title_##]</h2>
+				<div class="fc-index-width for-cover-item gallery large">
+					<ul class="index-width-support fc-list">
+						<s_cover_item>
+						<li class="index-item article-item">
+							<div class="index-item-wrap">
+								<a class="no-text index-item-link" href="[##_cover_item_url_##]" role="button">[##_cover_item_title_##]</a>
+								<div class="index-item-visual" style="display:none" aria-hidden="true">
+									<div class="index-item-text">
+										<h3>[##_cover_item_title_##]</h3>
+										<s_cover_item_article_info>
+										<span class="digit">[##_cover_item_simple_date_##]</span>
+										</s_cover_item_article_info>
+										<p class="index-item-summary">[##_cover_item_summary_##]</p>
+									</div>
+									<figure class="index-item-thumbnail" data-style="<s_cover_item_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_cover_item_thumbnail_##]);background-position:50% 50%;background-size:cover</s_cover_item_thumbnail>"></figure>
+								</div>
+							</div>
+						</li>
+						</s_cover_item>
+						<li class="index-item blank-item blank1" aria-hidden="true"></li>
+						<li class="index-item blank-item blank2" aria-hidden="true"></li>
+						<li class="index-item blank-item blank3" aria-hidden="true"></li>
+						<li class="index-item blank-item blank4" aria-hidden="true"></li>
+					</ul>
+				</div>
+			</div>
+			</s_cover>
+			<s_cover name="large-gallery-list-hidden-text">
+			<div class="cover-item for-gallery">
+				<hr class="page-stroke">
+				<h2 class="cover-title">[##_cover_title_##]</h2>
+				<div class="fc-index-width for-cover-item gallery large hide-text">
+					<ul class="index-width-support fc-list">
+						<s_cover_item>
+						<li class="index-item article-item">
+							<div class="index-item-wrap">
+								<a class="no-text index-item-link" href="[##_cover_item_url_##]" role="button">[##_cover_item_title_##]</a>
+								<div class="index-item-visual" style="display:none" aria-hidden="true">
+									<div class="index-item-text">
+										<h3>[##_cover_item_title_##]</h3>
+										<s_cover_item_article_info>
+										<span class="digit">[##_cover_item_simple_date_##]</span>
+										</s_cover_item_article_info>
+										<p class="index-item-summary">[##_cover_item_summary_##]</p>
+									</div>
+									<figure class="index-item-thumbnail" data-style="<s_cover_item_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_cover_item_thumbnail_##]);background-position:50% 50%;background-size:cover</s_cover_item_thumbnail>"></figure>
+								</div>
+							</div>
+						</li>
+						</s_cover_item>
+						<li class="index-item blank-item blank1" aria-hidden="true"></li>
+						<li class="index-item blank-item blank2" aria-hidden="true"></li>
+						<li class="index-item blank-item blank3" aria-hidden="true"></li>
+						<li class="index-item blank-item blank4" aria-hidden="true"></li>
+					</ul>
+				</div>
+			</div>
+			</s_cover>
+			<s_cover name="small-gallery-list">
+			<div class="cover-item for-gallery">
+				<hr class="page-stroke">
+				<h2 class="cover-title">[##_cover_title_##]</h2>
+				<div class="fc-index-width for-cover-item gallery small">
+					<ul class="index-width-support fc-list">
+						<s_cover_item>
+						<li class="index-item article-item">
+							<div class="index-item-wrap">
+								<a class="no-text index-item-link" href="[##_cover_item_url_##]" role="button">[##_cover_item_title_##]</a>
+								<div class="index-item-visual" style="display:none" aria-hidden="true">
+									<div class="index-item-text">
+										<h3>[##_cover_item_title_##]</h3>
+										<s_cover_item_article_info>
+										<span class="digit">[##_cover_item_simple_date_##]</span>
+										</s_cover_item_article_info>
+										<p class="index-item-summary">[##_cover_item_summary_##]</p>
+									</div>
+									<figure class="index-item-thumbnail" data-style="<s_cover_item_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_cover_item_thumbnail_##]);background-position:50% 50%;background-size:cover</s_cover_item_thumbnail>"></figure>
+								</div>
+							</div>
+						</li>
+						</s_cover_item>
+						<li class="index-item blank-item blank1" aria-hidden="true"></li>
+						<li class="index-item blank-item blank2" aria-hidden="true"></li>
+						<li class="index-item blank-item blank3" aria-hidden="true"></li>
+						<li class="index-item blank-item blank4" aria-hidden="true"></li>
+					</ul>
+				</div>
+			</div>
+			</s_cover>
+			<s_cover name="small-gallery-list-hidden-text">
+			<div class="cover-item for-gallery">
+				<hr class="page-stroke">
+				<h2 class="cover-title">[##_cover_title_##]</h2>
+				<div class="fc-index-width for-cover-item gallery small hide-text">
+					<ul class="index-width-support fc-list">
+						<s_cover_item>
+						<li class="index-item article-item">
+							<div class="index-item-wrap">
+								<a class="no-text index-item-link" href="[##_cover_item_url_##]" role="button">[##_cover_item_title_##]</a>
+								<div class="index-item-visual" style="display:none" aria-hidden="true">
+									<div class="index-item-text">
+										<h3>[##_cover_item_title_##]</h3>
+										<s_cover_item_article_info>
+										<span class="digit">[##_cover_item_simple_date_##]</span>
+										</s_cover_item_article_info>
+										<p class="index-item-summary">[##_cover_item_summary_##]</p>
+									</div>
+									<figure class="index-item-thumbnail" data-style="<s_cover_item_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_cover_item_thumbnail_##]);background-position:50% 50%;background-size:cover</s_cover_item_thumbnail>"></figure>
+								</div>
+							</div>
+						</li>
+						</s_cover_item>
+						<li class="index-item blank-item blank1" aria-hidden="true"></li>
+						<li class="index-item blank-item blank2" aria-hidden="true"></li>
+						<li class="index-item blank-item blank3" aria-hidden="true"></li>
+						<li class="index-item blank-item blank4" aria-hidden="true"></li>
+					</ul>
+				</div>
+			</div>
+			</s_cover>
+			<s_cover name="poster-type-list">
+			<div class="cover-item for-gallery">
+				<hr class="page-stroke">
+				<h2 class="cover-title">[##_cover_title_##]</h2>
+				<div class="fc-index-width for-cover-item gallery poster-type">
+					<ul class="index-width-support fc-list">
+						<s_cover_item>
+						<li class="index-item article-item">
+							<div class="index-item-wrap">
+								<a class="no-text index-item-link" href="[##_cover_item_url_##]" role="button">[##_cover_item_title_##]</a>
+								<div class="index-item-visual" style="display:none" aria-hidden="true">
+									<div class="index-item-text">
+										<h3>[##_cover_item_title_##]</h3>
+										<s_cover_item_article_info>
+										<span class="digit">[##_cover_item_simple_date_##]</span>
+										</s_cover_item_article_info>
+										<p class="index-item-summary">[##_cover_item_summary_##]</p>
+									</div>
+									<figure class="index-item-thumbnail" data-style="<s_cover_item_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_cover_item_thumbnail_##]);background-position:50% 50%;background-size:cover</s_cover_item_thumbnail>"></figure>
+								</div>
+							</div>
+						</li>
+						</s_cover_item>
+						<li class="index-item blank-item blank1" aria-hidden="true"></li>
+						<li class="index-item blank-item blank2" aria-hidden="true"></li>
+						<li class="index-item blank-item blank3" aria-hidden="true"></li>
+						<li class="index-item blank-item blank4" aria-hidden="true"></li>
+					</ul>
+				</div>
+			</div>
+			</s_cover>
+			<s_cover name="poster-type-list-hidden-text">
+			<div class="cover-item for-gallery">
+				<hr class="page-stroke">
+				<h2 class="cover-title">[##_cover_title_##]</h2>
+				<div class="fc-index-width for-cover-item gallery poster-type hide-text">
+					<ul class="index-width-support fc-list">
+						<s_cover_item>
+						<li class="index-item article-item">
+							<div class="index-item-wrap">
+								<a class="no-text index-item-link" href="[##_cover_item_url_##]" role="button">[##_cover_item_title_##]</a>
+								<div class="index-item-visual" style="display:none" aria-hidden="true">
+									<div class="index-item-text">
+										<h3>[##_cover_item_title_##]</h3>
+										<s_cover_item_article_info>
+										<span class="digit">[##_cover_item_simple_date_##]</span>
+										</s_cover_item_article_info>
+										<p class="index-item-summary">[##_cover_item_summary_##]</p>
+									</div>
+									<figure class="index-item-thumbnail" data-style="<s_cover_item_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_cover_item_thumbnail_##]);background-position:50% 50%;background-size:cover</s_cover_item_thumbnail>"></figure>
+								</div>
+							</div>
+						</li>
+						</s_cover_item>
+						<li class="index-item blank-item blank1" aria-hidden="true"></li>
+						<li class="index-item blank-item blank2" aria-hidden="true"></li>
+						<li class="index-item blank-item blank3" aria-hidden="true"></li>
+						<li class="index-item blank-item blank4" aria-hidden="true"></li>
+					</ul>
+				</div>
+			</div>
+			</s_cover>
+			<s_cover name="card-type-list">
+			<div class="cover-item for-card-type">
+				<hr class="page-stroke">
+				<h2 class="cover-title">[##_cover_title_##]</h2>
+				<div class="fc-index-width for-cover-item card-type">
+					<ul class="index-width-support fc-list">
+						<s_cover_item>
+						<li class="index-item article-item">
+							<div class="index-item-wrap">
+								<a class="no-text index-item-link" href="[##_cover_item_url_##]" role="button">[##_cover_item_title_##]</a>
+								<div class="index-item-visual" style="display:none" aria-hidden="true">
+									<div class="index-item-text">
+										<h3>[##_cover_item_title_##]</h3>
+										<s_cover_item_article_info>
+										<span class="digit">[##_cover_item_simple_date_##]</span>
+										</s_cover_item_article_info>
+										<p class="index-item-summary">[##_cover_item_summary_##]</p>
+									</div>
+									<figure class="index-item-thumbnail" data-style="<s_cover_item_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_cover_item_thumbnail_##]);background-position:50% 50%;background-size:cover</s_cover_item_thumbnail>"></figure>
+								</div>
+							</div>
+						</li>
+						</s_cover_item>
+						<li class="index-item blank-item blank1" aria-hidden="true"></li>
+						<li class="index-item blank-item blank2" aria-hidden="true"></li>
+						<li class="index-item blank-item blank3" aria-hidden="true"></li>
+						<li class="index-item blank-item blank4" aria-hidden="true"></li>
+					</ul>
+				</div>
+			</div>
+			</s_cover>
+			<s_cover name="text-type-list">
+			<div class="cover-item for-text-type">
+				<hr class="page-stroke">
+				<h2 class="cover-title">[##_cover_title_##]</h2>
+				<div class="fc-index-width for-cover-item text-type">
+					<ul class="index-width-support fc-list">
+						<s_cover_item>
+						<li class="index-item article-item">
+							<div class="index-item-wrap">
+								<a class="no-text index-item-link" href="[##_cover_item_url_##]" role="button">[##_cover_item_title_##]</a>
+								<div class="index-item-visual" style="display:none" aria-hidden="true">
+									<div class="index-item-text">
+										<h3>[##_cover_item_title_##]</h3>
+										<s_cover_item_article_info>
+										<span class="digit">[##_cover_item_simple_date_##]</span>
+										</s_cover_item_article_info>
+										<p class="index-item-summary">[##_cover_item_summary_##]</p>
+									</div>
+									<figure class="index-item-thumbnail" data-style="<s_cover_item_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_cover_item_thumbnail_##]);background-position:50% 50%;background-size:cover</s_cover_item_thumbnail>"></figure>
+								</div>
+							</div>
+						</li>
+						</s_cover_item>
+						<li class="index-item blank-item blank1" aria-hidden="true"></li>
+					</ul>
+				</div>
+			</div>
+			</s_cover>
+			</s_cover_rep>
+			</s_cover_group>
+			<s_tag>
+			<header id="global-header">
+				<div class="gh-text">
+					<h2>인기 태그</h2>
+					<ul class="fc-list">
+						<li><a class="fade-link" href="[##_blog_link_##]">[##_title_##]</a></li>
+					</ul>
+				</div>
+				<del class="header-height" aria-hidden="true"></del>
+			</header>
+			<div class="fc-index-width for-tag-cloud">
+				<ul class="fc-list tag-cloud">
+					<s_tag_rep>
+					<li>
+						<a class="[##_tag_class_##]" href="[##_tag_link_##]">[##_tag_name_##]</a>
+					</li>
+					</s_tag_rep>
+					<li class="blank-tag blank1" style="display:none" aria-hidden="true"></li>
+					<li class="blank-tag blank2" style="display:none" aria-hidden="true"></li>
+					<li class="blank-tag blank3" style="display:none" aria-hidden="true"></li>
+					<li class="blank-tag blank4" style="display:none" aria-hidden="true"></li>
+					<li class="blank-tag blank5" style="display:none" aria-hidden="true"></li>
+					<li class="blank-tag blank6" style="display:none" aria-hidden="true"></li>
+				</ul>
+			</div>
+			<script async src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_tags.js?fcver=235013"></script>
+			</s_tag>
+			<s_list>
+			<header id="global-header">
+				<div class="gh-text">
+					<h2>[##_list_conform_##]</h2>
+					<ul class="fc-list">
+						<li><a class="fade-link" href="[##_blog_link_##]">[##_title_##]</a></li>
+					</ul>
+				</div>
+				<del class="header-height" aria-hidden="true"></del>
+			</header>
+			</s_list>
+			<div class="fc-index-width [##_var_list-appearance_##]<s_if_var_hidden-text> hide-text</s_if_var_hidden-text>">
+				<div class="index-width-support">
+					<s_page_rep>
+					<s_permalink_article_rep>
+					<header id="global-header">
+						<s_if_var_page-cover>
+						<div class="page-cover" aria-hidden="true">
+							<div class="parent-page-cover">
+								<div class="small-cover"></div>
+								<div class="medium-cover"></div>
+								<div class="large-cover"></div>
+							</div>
+						</div>
+						</s_if_var_page-cover>
+						<div class="gh-text">
+							<h2 aria-live="polite">[##_article_rep_title_##]</h2>
+							<ul class="fc-list">
+								<li class="digit">[##_article_rep_date_##]</li>
+								<li><a class="fade-link" href="[##_blog_link_##]">[##_title_##]</a></li>
+							</ul>
+						</div>
+						<del class="header-height" aria-hidden="true"></del>
+					</header>
+					<article class="page-limit-width for-page<s_if_var_serif> serif</s_if_var_serif><s_if_var_expanded-image> expand-support</s_if_var_expanded-image><s_if_var_edge-image> edge-support</s_if_var_edge-image><s_if_var_pro-code> procode<s_if_var_pro-code-line> hljs-line</s_if_var_pro-code-line><s_if_var_pro-code-stripe> hljs-stripe</s_if_var_pro-code-stripe><s_if_var_pro-code-overflow> hljs-overflow</s_if_var_pro-code-overflow><s_if_var_pro-code-expand> hljs-expand</s_if_var_pro-code-expand></s_if_var_pro-code> fc" id="article" aria-live="polite">
+						[##_article_rep_desc_##]
+					</article>
+					<script>
+						var generalThumb = "";
+					</script>
+					<s_if_var_pro-code>
+					<script src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_highlight.js?fcver=235013"></script>
+					<s_if_var_auto-code>
+					<script>
+						$("head").append('<link rel="stylesheet" href="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>style_highlight.css?fcver=235013">');
+						$("#article").find("pre:has(code)").attr("class", "procode-wrap");
+
+						hljs.initHighlightingOnLoad();
+					</script>
+					</s_if_var_auto-code>
+					<s_not_var_auto-code>
+					<script>
+						$("head").append('<link rel="stylesheet" href="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>style_highlight.css?fcver=235013">');
+						$("#article").find("pre:has(code)").addClass("procode-wrap");
+						
+						hljs.initHighlightingOnLoad();
+					</script>
+					</s_not_var_auto-code>
+					<s_if_var_pro-code-line>
+					<script src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_hljs_line.js?fcver=235013"></script>
+					<script>hljs.initLineNumbersOnLoad();</script>
+					</s_if_var_pro-code-line>
+					</s_if_var_pro-code>
+					<script async src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_article.js?fcver=235013"></script>
+					</s_permalink_article_rep>
+					</s_page_rep>
+					<s_notice_rep>
+					<s_index_article_rep>
+					<div class="index-item notice-item">
+						<div class="index-item-wrap">
+							<a class="no-text index-item-link" href="[##_notice_rep_link_##]" role="button">[##_notice_rep_title_##]</a>
+							<div class="index-item-visual" style="display:none" aria-hidden="true">
+								<div class="index-item-text">
+									<h3>[##_notice_rep_title_##]</h3>
+									<span class="digit">[##_notice_rep_date_##]</span>
+									<p class="index-item-summary">[##_notice_rep_summary_##]</p>
+								</div>
+								<figure class="index-item-thumbnail" data-style="<s_notice_rep_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_notice_rep_thumbnail_raw_url_##]);background-position:50% 50%;background-size:cover</s_notice_rep_thumbnail>"></figure>
+							</div>
+						</div>
+					</div>
+					</s_index_article_rep>
+					<s_permalink_article_rep>
+					<header id="global-header">
+						<s_if_var_page-cover>
+						<div class="page-cover" aria-hidden="true">
+							<div class="parent-page-cover">
+								<div class="small-cover"></div>
+								<div class="medium-cover"></div>
+								<div class="large-cover"></div>
+							</div>
+						</div>
+						</s_if_var_page-cover>
+						<div class="gh-text">
+							<h2 aria-live="polite">[##_notice_rep_title_##]</h2>
+							<ul class="fc-list">
+								<li class="digit">[##_notice_rep_date_##]</li>
+								<li><a class="fade-link" href="[##_blog_link_##]notice">공지사항</a></li>
+							</ul>
+						</div>
+						<del class="header-height" aria-hidden="true"></del>
+					</header>
+					<article class="page-limit-width<s_if_var_serif> serif</s_if_var_serif><s_if_var_expanded-image> expand-support</s_if_var_expanded-image><s_if_var_edge-image> edge-support</s_if_var_edge-image><s_if_var_pro-code> procode<s_if_var_pro-code-line> hljs-line</s_if_var_pro-code-line><s_if_var_pro-code-stripe> hljs-stripe</s_if_var_pro-code-stripe><s_if_var_pro-code-overflow> hljs-overflow</s_if_var_pro-code-overflow><s_if_var_pro-code-expand> hljs-expand</s_if_var_pro-code-expand></s_if_var_pro-code> fc" id="article" aria-live="polite">
+						<s_if_var_author>
+						<div class="author-inner">
+							<div>글 작성자: [##_notice_rep_author_##]</div>
+						</div>
+						</s_if_var_author>
+						[##_notice_rep_desc_##]
+					</article>
+					<hr class="page-stroke article-stroke">
+					<script>
+						var generalThumb = "<s_notice_rep_thumbnail>[##_notice_rep_thumbnail_raw_url_##]</s_notice_rep_thumbnail>";
+					</script>
+					<s_if_var_pro-code>
+					<script src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_highlight.js?fcver=235013"></script>
+					<s_if_var_auto-code>
+					<script>
+						$("head").append('<link rel="stylesheet" href="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>style_highlight.css?fcver=235013">');
+						$("#article").find("pre:has(code)").attr("class", "procode-wrap");
+
+						hljs.initHighlightingOnLoad();
+					</script>
+					</s_if_var_auto-code>
+					<s_not_var_auto-code>
+					<script>
+						$("head").append('<link rel="stylesheet" href="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>style_highlight.css?fcver=235013">');
+						$("#article").find("pre:has(code)").addClass("procode-wrap");
+						
+						hljs.initHighlightingOnLoad();
+					</script>
+					</s_not_var_auto-code>
+					<s_if_var_pro-code-line>
+					<script src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_hljs_line.js?fcver=235013"></script>
+					<script>hljs.initLineNumbersOnLoad();</script>
+					</s_if_var_pro-code-line>
+					</s_if_var_pro-code>
+					<script async src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_article.js?fcver=235013"></script>
+					</s_permalink_article_rep>
+					</s_notice_rep>
+					<s_article_protected>
+					<s_index_article_rep>
+					<div class="index-item protected-item">
+						<div class="index-item-wrap">
+							<a class="no-text index-item-link" href="[##_article_rep_link_##]" role="button">[##_article_rep_title_##]</a>
+							<div class="index-item-visual" style="display:none" aria-hidden="true">
+								<div class="index-item-text">
+									<h3>[##_article_rep_title_##]</h3>
+									<span class="digit">[##_article_rep_simple_date_##]</span>
+									<p class="index-item-summary">이 글은 보호되어 있기 때문에 이것을 보려면 암호가 필요합니다.</p>
+								</div>
+								<figure class="index-item-thumbnail"></figure>
+							</div>
+						</div>
+					</div>
+					</s_index_article_rep>
+					<s_permalink_article_rep>
+					<div class="gh-text hidden-alert-header" style="display:none" aria-hidden="true"><a class="fade-link" href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></div>
+					<div class="alert icon">
+						<div class="alert-hgroup">
+							<h2 aria-label="[##_article_rep_title_##] 글을 보려면 암호를 입력하세요.">[##_article_rep_title_##]</h2>
+							<p aria-hidden="true">글을 보려면 암호를 입력하세요.</p>
+						</div>
+						<div class="alert-field">
+							<input class="fc-appearance" type="password" id="[##_article_password_##]" name="[##_article_password_##]" value="" onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]">
+							<button class="fc-icon fc-appearance submit" onclick="[##_article_dissolve_##]">승인</button>
+						</div>
+						<span class="alert-notice">암호를 모른다면 운영자에게 문의하세요.</span>
+					</div>
+					</s_permalink_article_rep>
+					</s_article_protected>
+					<s_article_rep>
+					<s_index_article_rep>
+					<div class="index-item article-item">
+						<div class="index-item-wrap">
+							<a class="no-text index-item-link" href="[##_article_rep_link_##]" role="button">[##_article_rep_title_##]</a>
+							<div class="index-item-visual" style="display:none" aria-hidden="true">
+								<div class="index-item-text">
+									<h3>[##_article_rep_title_##]</h3>
+									<span class="digit">[##_article_rep_simple_date_##]</span>
+									<p class="index-item-summary">[##_article_rep_summary_##]</p>
+								</div>
+								<figure class="index-item-thumbnail" data-style="<s_article_rep_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_article_rep_thumbnail_raw_url_##]);background-position:50% 50%;background-size:cover</s_article_rep_thumbnail>"></figure>
+							</div>
+						</div>
+					</div>
+					</s_index_article_rep>
+					<s_permalink_article_rep>
+					<header id="global-header">
+						<s_if_var_page-cover>
+						<div class="page-cover" aria-hidden="true">
+							<div class="parent-page-cover">
+								<div class="small-cover"></div>
+								<div class="medium-cover"></div>
+								<div class="large-cover"></div>
+							</div>
+						</div>
+						</s_if_var_page-cover>
+						<div class="gh-text">
+							<h2 aria-live="polite">[##_article_rep_title_##]</h2>
+							<ul class="fc-list">
+								<li class="digit">[##_article_rep_date_##]</li>
+								<li><a class="fade-link" href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></li>
+							</ul>
+						</div>
+						<s_ad_div>
+						<nav class="admin-func" style="display:none" aria-hidden="true">
+							<ul class="admin-func-list fc-list">
+								<li><a class="fc-icon modify-post" href="[##_s_ad_m_link_##]" role="button">이 글 편집하기</a></li>
+								<li><a class="fc-icon delete-post" href="javascript:;" onclick="[##_s_ad_d_onclick_##]" role="button">이 글 삭제하기</a></li>
+							</ul>
+						</nav>
+						</s_ad_div>
+						<del class="header-height" aria-hidden="true"></del>
+					</header>
+					<article class="page-limit-width<s_if_var_serif> serif</s_if_var_serif><s_if_var_expanded-image> expand-support</s_if_var_expanded-image><s_if_var_edge-image> edge-support</s_if_var_edge-image><s_if_var_pro-code> procode<s_if_var_pro-code-line> hljs-line</s_if_var_pro-code-line><s_if_var_pro-code-stripe> hljs-stripe</s_if_var_pro-code-stripe><s_if_var_pro-code-overflow> hljs-overflow</s_if_var_pro-code-overflow><s_if_var_pro-code-expand> hljs-expand</s_if_var_pro-code-expand></s_if_var_pro-code> fc" id="article" aria-live="polite">
+						<s_if_var_author>
+						<div class="author-inner">
+							<div>글 작성자: [##_article_rep_author_##]</div>
+						</div>
+						</s_if_var_author>
+						[##_article_rep_desc_##]
+					</article>
+					<s_if_var_tags-trail><s_tag_label>
+					<div class="tags-trail page-limit-width"><div>[##_tag_label_rep_##]</div></div>
+					</s_tag_label></s_if_var_tags-trail>
+					<hr class="page-stroke article-stroke">
+					<nav class="activity-func">
+						<ul class="fc-list">
+							<li><button class="fc-appearance fc-button fade-link show-comments-button" data-func="show-comments" aria-controls="comments" aria-selected="false">댓글<s_if_var_count-comments><s_rp_count><span class="number digit" data-count="([##_article_rep_rp_cnt_##])" aria-hidden="true"></span></s_rp_count></s_if_var_count-comments></button></li>
+							<li><button class="fc-appearance fc-button fade-link show-export-button" data-func="show-export" aria-controls="export" aria-selected="false">공유하기</button></li>
+							<li><button class="fc-appearance fc-button fade-link show-related-button" data-func="show-related" aria-controls="related" aria-selected="false">다른 글</button></li>
+						</ul>
+					</nav>
+					<div class="activity-content-wrap">
+						<div class="activity-content" id="comments" style="display:none" aria-hidden="true">
+							<div class="comments<s_if_var_reversed-comments> reversed</s_if_var_reversed-comments>">
+								<s_rp>
+								<s_rp_container>
+								<button class="no-text transparent-comment-active" style="display:none" aria-hidden="true" aria-expanded="false">이 댓글의 메뉴 토글</button>
+								<ol class="fc-list comment-list">
+									<s_rp_rep>
+									<li class="comment-item" id="[##_rp_rep_id_##]">
+										<div class="comment-wrap [##_rp_rep_class_##]">
+											<p class="icon comment-desc">
+												[##_rp_rep_desc_##]
+											</p>
+											<figure class="comment-avatar" data-style="background-image:url(//img1.daumcdn.net/thumb/R110x0/?fname=[##_rp_rep_logo_##])" aria-hidden="true"></figure>
+											<div class="comment-info">
+												<button class="fc-icon fc-appearance comment-toggle" aria-expanded="false">이 댓글의 메뉴 토글</button>
+												<div class="comment-username">[##_rp_rep_name_##]</div>
+												<div class="comment-date digit">[##_rp_rep_date_##]</div>
+											</div>
+											<nav class="comment-control" aria-hidden="true">
+												<ul class="fc-list">
+													<li>
+														<a class="fc-icon reply-comment" href="javascript:;" onclick="[##_rp_rep_onclick_reply_##]" role="button">댓글에 댓글 작성하기</a>
+													</li>
+													<li>
+														<a class="fc-icon modify-comment" href="javascript:;" onclick="[##_rp_rep_onclick_delete_##]" role="button">댓글 편집 또는 삭제</a>
+													</li>
+													<li>
+														<a class="fc-icon report-comment" href="javascript:;" role="button">댓글 신고…</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+										<s_rp2_container>
+										<ul class="fc-list">
+											<s_rp2_rep>
+											<li class="comment-item" id="[##_rp_rep_id_##]">
+												<div class="reply-wrap [##_rp_rep_class_##]">
+													<p class="icon comment-desc">
+														[##_rp_rep_desc_##]
+													</p>
+													<figure class="comment-avatar" data-style="background-image:url(//img1.daumcdn.net/thumb/R110x0/?fname=[##_rp_rep_logo_##])" aria-hidden="true"></figure>
+													<div class="comment-info">
+														<button class="fc-icon fc-appearance comment-toggle" aria-expanded="false">이 댓글의 메뉴 토글</button>
+														<div class="comment-date digit">[##_rp_rep_date_##]</div>
+														<div class="comment-username">[##_rp_rep_name_##]</div>
+													</div>
+													<nav class="comment-control" aria-hidden="true">
+														<ul class="fc-list">
+															<li>
+																<a class="fc-icon report-comment" href="javascript:;" role="button">댓글 신고…</a>
+															</li>
+															<li>
+																<a class="fc-icon modify-comment" href="javascript:;" onclick="[##_rp_rep_onclick_delete_##]" role="button">댓글 편집 또는 삭제</a>
+															</li>
+														</ul>
+													</nav>
+												</div>
+											</li>
+											</s_rp2_rep>
+										</ul>
+										</s_rp2_container>
+									</li>
+									</s_rp_rep>
+								</ol>
+								</s_rp_container>
+								<s_rp_input_form>
+								<div class="comment-form-wrap comment-wrap">
+									<div class="icon comment-desc">
+										<textarea class="fc-appearance" id="comment-textarea" style="height:108px" name="[##_rp_input_comment_##]"></textarea>
+										<div class="comment-field">
+											<label class="comment-field-blank" style="display:none" for="comment-textarea" aria-hidden="true"></label>
+											<s_rp_member>
+											<s_rp_guest>
+											<div class="comment-guest-field">
+												<div class="username-field">
+													<input class="fc-appearance" id="comment-username-field" type="text" name="[##_rp_input_name_##]" value="[##_guest_name_##]">
+													<label for="comment-username-field">이름</label>
+												</div>
+												<div class="password-field">
+													<input class="fc-appearance" id="comment-password-field" type="password" name="[##_rp_input_password_##]">
+													<label for="comment-password-field">암호</label>
+												</div>
+											</div>
+											</s_rp_guest>
+											<div class="protect-button">
+											<input id="protect-comment" type="checkbox" name="[##_rp_input_is_secret_##]">
+											<label class="fc-icon" for="protect-comment" role="checkbox">운영자에게만 공개</label>
+											</div>
+											</s_rp_member>
+											<button class="submit-comment fc-icon fc-appearance" onclick="[##_rp_onclick_submit_##]">작성하기</button>
+										</div>
+									</div>
+									<figure class="comment-avatar icon" aria-hidden="true"></figure>
+								</div>
+								</s_rp_input_form>
+								</s_rp>
+							</div>
+						</div>
+						<div class="activity-content" id="export" style="display:none" aria-hidden="true">
+							<div class="export-content">
+								<ul class="fc-list">
+									<li class="export-item subscribe-item">
+										<a class="export-link no-text fc-subscribe btn_subscription" href="javascript:;" role="button" aria-label="이 블로그 구독하기"><span class="txt_state">구독하기</span></a>
+										<div class="export-visual icon subscribe-on-tistory fc-subscribe btn_subscription" style="display:none" aria-hidden="true">
+											<p class="txt_state">구독하기</p>
+										</div>
+									</li>
+									<li class="export-item">
+										<a class="export-link no-text" href="javascript:;" data-export="kakaotalk" role="button" aria-label="카카오톡 메신저 앱으로 메시지 보내기">카카오톡</a>
+										<div class="export-visual icon kakaotalk" style="display:none" aria-hidden="true">
+											<p>카카오톡</p>
+										</div>
+									</li>
+									<li class="export-item mobile">
+										<a class="export-link no-text" href="javascript:;" data-export="line" role="button" aria-label="라인 메신저 앱으로 메시지 보내기">라인</a>
+										<div class="export-visual icon line-app" style="display:none" aria-hidden="true">
+											<p>라인</p>
+										</div>
+									</li>
+									<li class="export-item">
+										<a class="export-link no-text" href="javascript:;" data-export="twitter" role="button" aria-label="트위터에 트윗하기">트위터</a>
+										<div class="export-visual icon twitter" style="display:none" aria-hidden="true">
+											<p>트위터</p>
+										</div>
+									</li>
+									<li class="export-item">
+										<a class="export-link no-text" href="javascript:;" data-export="facebook" role="button" aria-label="페이스북 담벼락에 올리기">Facebook</a>
+										<div class="export-visual icon facebook" style="display:none" aria-hidden="true">
+											<p>Facebook</p>
+										</div>
+									</li>
+									<li class="export-item">
+										<a class="export-link no-text" href="javascript:;" data-export="kakaostory" role="button" aria-label="카카오스토리에 공유하기">카카오스토리</a>
+										<div class="export-visual icon kakaostory" style="display:none" aria-hidden="true">
+											<p>카카오스토리</p>
+										</div>
+									</li>
+									<li class="export-item">
+										<a class="export-link no-text" href="javascript:;" data-export="band" role="button" aria-label="네이버 밴드에 내보내기">밴드</a>
+										<div class="export-visual icon band-app" style="display:none" aria-hidden="true">
+											<p>밴드</p>
+										</div>
+									</li>
+									<li class="export-item">
+										<a class="export-link no-text" href="javascript:;" data-export="naver" role="button" aria-label="네이버 블로그를 포함하여 네이버가 운영하는 서비스에 내보내기">네이버 블로그</a>
+										<div class="export-visual icon naver-app" style="display:none" aria-hidden="true">
+											<p>네이버 블로그</p>
+										</div>
+									</li>
+									<li class="export-item">
+										<a class="export-link no-text" href="javascript:;" data-export="pocket" role="button" aria-label="포켓에 내보내기">Pocket</a>
+										<div class="export-visual icon pocket-app" style="display:none" aria-hidden="true">
+											<p>Pocket</p>
+										</div>
+									</li>
+									<li class="export-item">
+										<a class="export-link no-text" href="javascript:;" data-export="evernote" role="button" aria-label="에버노트에 내보내기">Evernote</a>
+										<div class="export-visual icon evernote" style="display:none" aria-hidden="true">
+											<p>Evernote</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="activity-content" id="related" style="display:none" aria-hidden="true">
+							<div class="related-content [##_var_list-appearance_##]">
+								<ul class="fc-list">
+									<s_article_related>
+									<s_article_related_rep>
+									<li class="related-item article-item">
+										<div class="index-item-wrap">
+											<a class="no-text index-item-link" href="[##_article_related_rep_link_##]" role="button">[##_article_related_rep_title_##]</a>
+											<div class="index-item-visual" style="display:none" aria-hidden="true">
+												<div class="index-item-text">
+													<h3>[##_article_related_rep_title_##]</h3>
+													<span class="digit">[##_article_related_rep_date_##]</span>
+													<p class="index-item-summary"></p>
+												</div>
+												<figure class="index-item-thumbnail" data-style="<s_article_related_rep_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=[##_article_related_rep_thumbnail_link_##]);background-position:50% 50%;background-size:cover</s_article_related_rep_thumbnail>"></figure>
+											</div>
+										</div>
+									</li>
+									</s_article_related_rep>
+									</s_article_related>
+									<li class="related-item blank-item blank1" aria-hidden="true"></li>
+									<li class="related-item blank-item blank2" aria-hidden="true"></li>
+									<li class="related-item blank-item blank3" aria-hidden="true"></li>
+									<li class="related-item blank-item blank4" aria-hidden="true"></li>
+								</ul>
+								<div class="more-contents-wrap">
+									<a class="icon fade-link more-contents" href="[##_article_rep_category_link_##]" role="button">다른 글 더 둘러보기</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<s_if_var_recommendation-alert><s_article_prev>
+					<aside class="recommendation [##_article_prev_type_##]" style="display:none" aria-hidden="true">
+						<a class="recommendation-link no-text" href="[##_article_prev_link_##]" role="button" aria-label="추천 글, [##_article_prev_title_##] 읽기">[##_article_prev_title_##]</a>
+						<div class="recommendation-visual" aria-hidden="true">
+							<div class="recommendation-text">
+								<span>이 글은 어떠세요?</span>
+								<p>[##_article_prev_title_##]</p>
+							</div>
+							<figure data-style="<s_article_prev_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R300x0/?fname=[##_article_prev_thumbnail_link_##])</s_article_prev_thumbnail>"></figure>
+						</div>
+						<button class="fc-icon fc-appearance fc-button close-alert">닫기</button>
+					</aside>
+					</s_article_prev></s_if_var_recommendation-alert>
+					<script>
+						var generalThumb = "<s_article_rep_thumbnail>[##_article_rep_thumbnail_raw_url_##]</s_article_rep_thumbnail>";
+					</script>
+					<s_if_var_pro-code>
+					<script src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_highlight.js?fcver=235013"></script>
+					<s_if_var_auto-code>
+					<script>
+						$("head").append('<link rel="stylesheet" href="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>style_highlight.css?fcver=235013">');
+						$("#article").find("pre:has(code)").attr("class", "procode-wrap");
+
+						hljs.initHighlightingOnLoad();
+					</script>
+					</s_if_var_auto-code>
+					<s_not_var_auto-code>
+					<script>
+						$("head").append('<link rel="stylesheet" href="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>style_highlight.css?fcver=235013">');
+						$("#article").find("pre:has(code)").addClass("procode-wrap");
+						
+						hljs.initHighlightingOnLoad();
+					</script>
+					</s_not_var_auto-code>
+					<s_if_var_pro-code-line>
+					<script src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_hljs_line.js?fcver=235013"></script>
+					<script>hljs.initLineNumbersOnLoad();</script>
+					</s_if_var_pro-code-line>
+					</s_if_var_pro-code>
+					<script async src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_article.js?fcver=235013"></script>
+					<script async src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_activity.js?fcver=235013"></script>
+					<script async src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_export.js?fcver=235013"></script>
+					<script async src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_comments.js?fcver=235013"></script>
+					</s_permalink_article_rep>
+					</s_article_rep>
+				</div>
+			</div>
+			<s_guest>
+			<header id="global-header">
+				<s_if_var_page-cover>
+				<div class="page-cover" aria-hidden="true">
+					<div class="parent-page-cover">
+						<div class="small-cover"></div>
+						<div class="medium-cover"></div>
+						<div class="large-cover"></div>
+					</div>
+				</div>
+				</s_if_var_page-cover>
+				<div class="gh-text">
+					<h2>안부 남기기</h2>
+				</div>
+				<del class="header-height" aria-hidden="true"></del>
+			</header>
+			<div class="guestbook-content" id="comments">
+				<div class="comments">
+					<s_guest_input_form>
+					<div class="comment-form-wrap comment-wrap">
+						<div class="icon comment-desc">
+							<textarea class="fc-appearance" id="comment-textarea" style="height:108px" name="[##_guest_input_comment_##]"></textarea>
+							<div class="comment-field">
+								<label class="comment-field-blank" style="display:none" for="comment-textarea" aria-hidden="true"></label>
+								<s_guest_member>
+								<s_guest_form>
+								<div class="comment-guest-field">
+									<div class="username-field">
+										<input class="fc-appearance" id="comment-username-field" type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]">
+										<label for="comment-username-field">이름</label>
+									</div>
+									<div class="password-field">
+										<input class="fc-appearance" id="comment-password-field" type="password" name="[##_guest_input_password_##]">
+										<label for="comment-password-field">암호</label>
+									</div>
+								</div>
+								</s_guest_form>
+								<div class="protect-button">
+								<input id="protect-comment" type="checkbox" name="[##_guest_input_is_secret_##]">
+								<label class="fc-icon" for="protect-comment" role="checkbox">운영자에게만 공개</label>
+								</div>
+								</s_guest_member>
+								<button class="submit-comment fc-icon fc-appearance" onclick="[##_guest_onclick_submit_##]">작성하기</button>
+							</div>
+						</div>
+						<figure class="comment-avatar icon" aria-hidden="true"></figure>
+					</div>
+					</s_guest_input_form>
+					<s_guest_container>
+					<button class="no-text transparent-comment-active" style="display:none" aria-hidden="true" aria-expanded="false">이 댓글의 메뉴 토글</button>
+					<ol class="fc-list comment-list">
+						<s_guest_rep>
+						<li class="comment-item" id="[##_guest_rep_id_##]">
+							<div class="comment-wrap [##_guest_rep_class_##]">
+								<p class="icon comment-desc">
+									[##_guest_rep_desc_##]
+								</p>
+								<figure class="comment-avatar" aria-hidden="true"></figure>
+								<div class="comment-info">
+									<button class="fc-icon fc-appearance comment-toggle" aria-expanded="false">이 댓글의 메뉴 토글</button>
+									<div class="comment-username">[##_guest_rep_name_##]</div>
+									<div class="comment-date digit">[##_guest_rep_date_##]</div>
+								</div>
+								<nav class="comment-control" aria-hidden="true">
+									<ul class="fc-list">
+										<li>
+											<a class="fc-icon reply-comment" href="javascript:;" onclick="[##_guest_rep_onclick_reply_##]" role="button">댓글에 댓글 작성하기</a>
+										</li>
+										<li>
+											<a class="fc-icon modify-comment" href="javascript:;" onclick="[##_guest_rep_onclick_delete_##]" role="button">댓글 편집 또는 삭제</a>
+										</li>
+										<li>
+											<a class="fc-icon report-comment" href="javascript:;" role="button">댓글 신고…</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<s_guest_reply_container>
+							<ul class="fc-list">
+								<s_guest_reply_rep>
+								<li class="comment-item" id="[##_guest_rep_id_##]">
+									<div class="reply-wrap [##_guest_rep_class_##]">
+										<p class="icon comment-desc">
+											[##_guest_rep_desc_##]
+										</p>
+										<figure class="comment-avatar" aria-hidden="true"></figure>
+										<div class="comment-info">
+											<button class="fc-icon fc-appearance comment-toggle" aria-expanded="false">이 댓글의 메뉴 토글</button>
+											<div class="comment-date digit">[##_guest_rep_date_##]</div>
+											<div class="comment-username">[##_guest_rep_name_##]</div>
+										</div>
+										<nav class="comment-control" aria-hidden="true">
+											<ul class="fc-list">
+												<li>
+													<a class="fc-icon report-comment" href="javascript:;" role="button">댓글 신고…</a>
+												</li>
+												<li>
+													<a class="fc-icon modify-comment" href="javascript:;" onclick="[##_guest_rep_onclick_delete_##]" role="button">댓글 편집 또는 삭제</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</li>
+								</s_guest_reply_rep>
+							</ul>
+							</s_guest_reply_container>
+						</li>
+						</s_guest_rep>
+					</ol>
+					</s_guest_container>
+				</div>
+			</div>
+			<script async src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_guestbook.js?fcver=235013"></script>
+			<script async src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_comments.js?fcver=235013"></script>
+			</s_guest>
+		</main>
+		<s_paging>
+		<nav class="scrollbar-support" id="pagination">
+			<div class="pagination-wrap">
+				<ul class="pagination fc-list">
+					<li class="pg-prev">
+						<a class="icon fade-link [##_no_more_prev_##]" [##_prev_page_##] role="button">최신</a>
+					</li>
+					<li class="pg-number">
+						<ul class="fc-list">
+							<s_paging_rep>
+							<li>
+								<a class="fade-link digit number" [##_paging_rep_link_##] role="button">[##_paging_rep_link_num_##]</a>
+							</li>
+							</s_paging_rep>
+						</ul>
+					</li>
+					<li class="pg-next">
+						<a class="icon fade-link [##_no_more_next_##]" [##_next_page_##] role="button">다음</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		</s_paging>
+		<div class="sidebar-area">
+			<del class="sidebar-scrollbar" style="display:none" aria-hidden="true">
+				<del class="sidebar-scrollbar-inner"></del>
+			</del>
+			<div class="sidebar-inner">
+				<div class="sidebar-title">
+					<a class="no-text sidebar-title-link" href="[##_blog_link_##]" role="button">[##_title_##] 블로그의 첫 페이지로 이동</a>
+					<div class="sidebar-title-inner<s_if_var_sidebar-trademark> sidebar-trademark</s_if_var_sidebar-trademark>" aria-hidden="true">
+						<figure class="sidebar-avatar" data-style="background-image:url(//img1.daumcdn.net/thumb/R240x0/?fname=[##_image_##])"></figure>
+						<p>[##_title_##]</p>
+					</div>
+				</div>
+				<div class="sidebar-contents">
+					<aside class="sub-navigation" id="sidebar" style="display:none" aria-hidden="true">
+							<button class="fc-appearance fc-icon fc-button close-sidebar" data-func="close-sidebar">사이드바 닫기</button>
+							<ul class="fc-list sidebar-func-list">
+								<li class="sidebar-go-to-index-inner" style="<s_not_var_index-button>display:none</s_not_var_index-button>" aria-hidden="<s_if_var_index-button>false</s_if_var_index-button><s_not_var_index-button>true</s_not_var_index-button>"><a class="fc-icon sidebar-go-to-index" href="[##_blog_link_##]" role="button">[##_title_##]의 첫 페이지로 이동</a></li>
+							</ul>
+						<div class="sidebar">
+							<button class="fc-appearance fc-button no-text transparent" data-func="close-sidebar" style="display:none" aria-hidden="true">사이드바 닫기</button>
+							<s_sidebar>
+							<!-- 사이드바 -->
+							<s_sidebar_element>
+							<!-- 검색 -->
+							<div class="module search-module icon">
+								<h5>검색</h5>
+								<s_search>
+								<input class="fc-appearance search-field" type="text" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }" aria-label="검색어 입력">
+								<button class="fc-appearance fc-icon search-button" onclick="[##_search_onclick_submit_##]" class="submit">검색</button>
+								</s_search>
+							</div>
+							</s_sidebar_element>
+							<s_sidebar_element>
+							<!-- 메뉴 -->
+							<div class="module menu-module">
+								<h5>메뉴</h5>
+								[##_blog_menu_##]
+							</div>
+							</s_sidebar_element>
+							<s_sidebar_element>
+							<!-- 카테고리 -->
+							<div class="module category-module <s_if_var_category>close-sub-category</s_if_var_category><s_not_var_category>open-sub-category</s_not_var_category>">
+								<h5>카테고리</h5>
+								[##_category_list_##]
+							</div>
+							</s_sidebar_element>
+							<s_sidebar_element>
+							<!-- 최근 글 -->
+							<div class="module recent-module [##_var_post-module-type_##]">
+								<h5>최근 글</h5>
+								<ul>
+									<s_rctps_rep>
+									<li>
+										<a class="icon" href="[##_rctps_rep_link_##]" role="button" aria-label="글: [##_rctps_rep_title_##]">[##_rctps_rep_title_##]</a>
+										<div class="post-module-visual" aria-hidden="true">
+											<p class="icon">[##_rctps_rep_title_##]</p>
+											<span class="digit">[##_rctps_rep_simple_date_##]</span>
+											<figure data-style="<s_rctps_rep_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R180x0/?fname=[##_rctps_rep_thumbnail_##])</s_rctps_rep_thumbnail>"></figure>
+										</div>
+									</li>
+									</s_rctps_rep>
+								</ul>
+							</div>
+							</s_sidebar_element>
+							<s_sidebar_element>
+							<!-- 인기 글 -->
+							<div class="module famous-module [##_var_post-module-type_##]">
+								<h5>인기 글</h5>
+								<ul>
+									<s_rctps_popular_rep>
+									<li>
+										<a class="icon" href="[##_rctps_rep_link_##]" role="button" aria-label="인기 글: [##_rctps_rep_title_##]">[##_rctps_rep_title_##]</a>
+										<div class="post-module-visual" aria-hidden="true">
+											<p class="icon">[##_rctps_rep_title_##]</p>
+											<span class="digit">[##_rctps_rep_simple_date_##]</span>
+											<figure data-style="<s_rctps_rep_thumbnail>background-image:url(//img1.daumcdn.net/thumb/R180x0/?fname=[##_rctps_rep_thumbnail_##])</s_rctps_rep_thumbnail>"></figure>
+										</div>
+									</li>
+									</s_rctps_popular_rep>
+								</ul>
+							</div>
+							</s_sidebar_element>
+							<s_sidebar_element>
+							<!-- 최근 댓글 -->
+							<div class="module recent-comments-module">
+								<h5>댓글</h5>
+								<ul>
+									<s_rctrp_rep>
+									<li>
+										<a class="icon" href="[##_rctrp_rep_link_##]" role="button" aria-label="댓글: [##_rctrp_rep_desc_##]">[##_rctrp_rep_desc_##]</a>
+									</li>
+									</s_rctrp_rep>
+								</ul>
+							</div>
+							</s_sidebar_element>
+							<s_sidebar_element>
+							<!-- 공지사항 -->
+							<s_rct_notice>
+							<div class="module notice-module">
+								<h5>공지사항</h5>
+								<ul>
+									<s_rct_notice_rep>
+									<li>
+										<a class="icon" href="[##_notice_rep_link_##]" role="button" aria-label="공지: [##_notice_rep_title_##]">공지 - [##_notice_rep_title_##]</a>
+									</li>
+									</s_rct_notice_rep>
+									<s_if_var_notice>
+									<li>
+										<a class="icon" href="/notice" role="button" aria-label="공지사항 전체 보기…">전체 보기…</a>
+									</li>
+									</s_if_var_notice>
+								</ul>
+							</div>
+							</s_rct_notice>
+							</s_sidebar_element>
+							<s_sidebar_element>
+							<!-- 아카이브 -->
+							<div class="module archive-module">
+								<h5>아카이브</h5>
+								<ul>
+									<s_archive_rep>
+									<li>
+										<a class="icon digit" href="[##_archive_rep_link_##]" role="button" aria-label="[##_archive_rep_date_##] 아카이브에 있는 [##_archive_rep_count_##]개의 글">[##_archive_rep_date_##]</a>
+									</li>
+									</s_archive_rep>
+								</ul>
+							</div>
+							</s_sidebar_element>
+							<s_sidebar_element>
+							<!-- 태그 -->
+							<div class="module tags-module">
+								<h5>태그</h5>
+								<ul>
+									<s_random_tags>
+									<li>
+										<a class="icon [##_tag_class_##]" href="[##_tag_link_##]" role="button" aria-label="[##_tag_name_##] 태그">[##_tag_name_##]</a>
+									</li>
+									</s_random_tags>
+									<s_if_var_tag>
+									<li>
+										<a class="icon" href="/tag" role="button" aria-label="태그 전체 보기…">전체 보기…</a>
+									</li>
+									</s_if_var_tag>
+								</ul>
+							</div>
+							</s_sidebar_element>
+							<s_sidebar_element>
+							<!-- 나의 외부 링크 -->
+							<div class="module link-module">
+								<h5>나의 외부 링크</h5>
+								<ul>
+									<s_link_rep>
+									<li>
+										<a class="icon" href="[##_link_url_##]" target="_blank" role="button" aria-label="[##_link_site_##] 링크">[##_link_site_##]</a>
+									</li>
+									</s_link_rep>
+								</ul>
+							</div>
+							</s_sidebar_element>
+							</s_sidebar>
+						</div>
+					</aside>
+					<aside class="sub-navigation" id="blog-info" style="display:none" aria-hidden="true">
+						<button class="fc-appearance fc-icon fc-button close-blog-info" data-func="close-blog-info">블로그 정보 닫기</button>
+						<div class="sidebar">
+							<button class="fc-appearance fc-button no-text transparent" data-func="close-blog-info" style="display:none" aria-hidden="true">블로그 정보 닫기</button>
+							<div class="module info-module">
+								<a class="info-module-button no-text" href="[##_blog_link_##]" role="button">[##_blogger_##]의 [##_title_##]</a>
+								<div class="align-center" aria-hidden="true">
+									<div class="info-module-icon" data-style="background-image:url(//img1.daumcdn.net/thumb/R240x0/?fname=[##_image_##])"></div>
+									<div class="info-module-text">
+										<p>[##_title_##]</p>
+										<span>[##_blogger_##]</span>
+									</div>
+								</div>
+							</div>
+							<s_sidebar>
+							<!-- 블로그 정보 -->
+							<s_sidebar_element>
+							<!-- 블로그 구독하기 -->
+							<div class="module subscribe-module">
+								<h5>블로그 구독하기</h5>
+								<ul>
+									<li class="enable-subscription">
+										<a class="icon mdl-subsc-on-tistory fc-subscribe btn_subscription" href="javascript:;" role="button"><span class="txt_state">구독하기</span></a>
+									</li>
+									<s_if_var_naver>
+									<li>
+										<a class="icon mdl-subsc-on-naver subscribe-on-naver" href="javascript:;" role="button">네이버 이웃 맺기</a>
+									</li>
+									</s_if_var_naver>
+									<li>
+										<a class="icon mdl-subsc-on-feed" href="[##_rss_url_##]" target="_blank" role="button">RSS 피드</a>
+									</li>
+								</ul>
+							</div>
+							</s_sidebar_element>
+							<s_sidebar_element>
+							<!-- 방문자 -->
+							<div class="module visitor-module">
+								<h5>방문자</h5>
+								<ul>
+									<li class="visitor-emphasis">
+										<span class="visitor-lable">전체 방문자</span> <span class="visitor-count digit">[##_count_total_##]</span>
+									</li>
+									<li>
+										<span class="visitor-lable">오늘</span> <span class="visitor-count digit">[##_count_today_##]</span>
+									</li>
+									<li>
+										<span class="visitor-lable">어제</span> <span class="visitor-count digit">[##_count_yesterday_##]</span>
+									</li>
+								</ul>
+							</div>
+							</s_sidebar_element>
+							<s_sidebar_element>
+							<!-- 티스토리 로그인 정보 -->
+							<div class="module tistory-account">
+								<h5>티스토리</h5>
+								<div class="inner_header_layer">
+									<ul class="list_toolbar">
+										<li>
+											<a class="icon" href="https://www.tistory.com" role="button">티스토리 홈</a>
+										</li>
+										<li>
+											<a class="icon manage-button" href="[##_owner_url_##]" role="button">이 블로그 관리하기</a>
+										</li>
+										<li>
+											<a class="icon newpost-button" href="[##_owner_url_##]/newpost" role="button">글쓰기</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							</s_sidebar_element>
+							</s_sidebar>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<footer class="scrollbar-support<s_not_var_company-code> bottom</s_not_var_company-code>" id="footer" aria-hidden="false">
+			<div class="ft-left">
+				<button class="fc-icon fc-circle fc-appearance fc-button fc-subscribe ft-subscribe btn_subscription">[##_title_##] 블로그 <span class="txt_state">구독하기</span></button>
+			</div>
+			<div class="ft-center">
+				<address lang="en" class="tistory-address"><a class="fade-link" href="https://www.tistory.com" target="_blank">Powered by Tistory / Kakao.</a></address>
+				<address class="copyright">&copy; [##_blogger_##].</address>
+				<address lang="en"><a class="fade-link" href="https://fraccinospace.tistory.com" target="_blank">Designed by Fraccino.</a></address>
+			</div>
+			<div class="ft-right">
+				<button class="fc-icon fc-circle fc-appearance fc-button ft-go-to-top" data-func="go-to-top">페이지 맨 위로 올라가기</button>
+			</div>
+		</footer>
+		<s_if_var_company-code>
+		<div class="scrollbar-support" id="business">
+			<div class="business">
+				<s_if_var_company-title><span class="name">[##_var_company-title_##]</span></s_if_var_company-title>
+				<s_if_var_company-name><span>대표: [##_var_company-name_##]</span></s_if_var_company-name>
+				<s_if_var_company-phone><span>대표전화: <a class="fade-link" href="tel:[##_var_company-phone_##]" role="button">[##_var_company-phone_##]</a></span></s_if_var_company-phone>
+				<s_if_var_company-email><span>Email: <a class="fade-link" href="mailto:[##_var_company-email_##]" role="button">[##_var_company-email_##]</a></span></s_if_var_company-email>
+				<s_if_var_company-address><span>주소: <a class="fade-link" href="https://map.kakao.com/?map_type=TYPE_MAP&q=[##_var_company-address_##]" target="_blank" role="button">[##_var_company-address_##]</a></span></s_if_var_company-address>
+				<span>사업자등록번호: [##_var_company-code_##]</span>
+				<s_if_var_company-selling-code><span>통신판매신고번호: [##_var_company-selling-code_##]</span></s_if_var_company-selling-code>
+				<s_if_var_company-agreement><span><a class="business-agreement fade-link icon" href="[##_var_company-agreement_##]" target="_blank" role="button">이용약관 보기</a></span></s_if_var_company-agreement>
+			</div>
+		</div>
+		</s_if_var_company-code>
+		</s_t3>
+		<script>
+			var imagesURL = "<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>",
+				title = "[##_title_##]",
+				blogLink = "[##_blog_link_##]",
+				manageLink = "[##_owner_url_##]",
+				fcver = "?fcver=235013",
+				fixedSidebar = "<s_if_var_fixed-sidebar>true</s_if_var_fixed-sidebar><s_not_var_fixed-sidebar>false</s_not_var_fixed-sidebar>",
+				
+				limitedWidth = "<s_if_var_recommended-width>true</s_if_var_recommended-width><s_not_var_recommended-width>false</s_not_var_recommended-width>",
+				articleWidth = parseInt("<s_if_var_article-width>[##_var_article-width_##]</s_if_var_article-width><s_not_var_article-width>728</s_not_var_article-width>"),
+				expandedImgWidth = parseInt("<s_if_var_expanded-image-width>[##_var_expanded-image-width_##]</s_if_var_expanded-image-width><s_not_var_expanded-image-width>1100</s_not_var_expanded-image-width>"),
+				
+				trademark = "<s_if_var_trademark>[##_var_trademark_##]</s_if_var_trademark><s_not_var_trademark>undefined</s_not_var_trademark>",
+				dawnTrademark = "<s_if_var_dawn-trademark>[##_var_dawn-trademark_##]</s_if_var_dawn-trademark><s_not_var_dawn-trademark>undefined</s_not_var_dawn-trademark>",
+				nightTrademark = "<s_if_var_night-trademark>[##_var_night-trademark_##]</s_if_var_night-trademark><s_not_var_night-trademark>undefined</s_not_var_night-trademark>",
+				coverTrademark = "<s_if_var_cover-trademark>[##_var_cover-trademark_##]</s_if_var_cover-trademark><s_not_var_cover-trademark>undefined</s_not_var_cover-trademark>",
+				
+				jacketColor = "<s_if_var_jacket-color>[##_var_jacket-color_##]</s_if_var_jacket-color><s_not_var_jacket-color>transparent</s_not_var_jacket-color>",
+				jacketImage = "<s_if_var_jacket-image>[##_var_jacket-image_##]</s_if_var_jacket-image><s_not_var_jacket-image>undefined</s_not_var_jacket-image>",
+				
+				dayPageColor = "<s_if_var_day-page-color>[##_var_day-page-color_##]</s_if_var_day-page-color><s_not_var_day-page-color>transparent</s_not_var_day-page-color>",
+				dayColor = "<s_if_var_day-color>[##_var_day-color_##]</s_if_var_day-color><s_not_var_day-color>transparent</s_not_var_day-color>",
+				
+				dawnPageColor = "<s_if_var_dawn-page-color>[##_var_dawn-page-color_##]</s_if_var_dawn-page-color><s_not_var_dawn-page-color>transparent</s_not_var_dawn-page-color>",
+				dawnColor = "<s_if_var_dawn-color>[##_var_dawn-color_##]</s_if_var_dawn-color><s_not_var_dawn-color>transparent</s_not_var_dawn-color>",
+				
+				nightPageColor = "<s_if_var_night-page-color>[##_var_night-page-color_##]</s_if_var_night-page-color><s_not_var_night-page-color>transparent</s_not_var_night-page-color>",
+				nightColor = "<s_if_var_night-color>[##_var_night-color_##]</s_if_var_night-color><s_not_var_night-color>transparent</s_not_var_night-color>",
+				
+				altCover = "<s_if_var_page-cover-image>[##_var_page-cover-image_##]</s_if_var_page-cover-image><s_not_var_page-cover-image>undefined</s_not_var_page-cover-image>",
+				secondAltCover = "<s_if_var_second-cover>[##_var_second-cover_##]</s_if_var_second-cover><s_not_var_second-cover>undefined</s_not_var_second-cover>",
+				thirdAltCover = "<s_if_var_third-cover>[##_var_third-cover_##]</s_if_var_third-cover><s_not_var_third-cover>undefined</s_not_var_third-cover>",
+				fourthAltCover = "<s_if_var_fourth-cover>[##_var_fourth-cover_##]</s_if_var_fourth-cover><s_not_var_fourth-cover>undefined</s_not_var_fourth-cover>",
+				
+				dayKeyword = "[##_var_day-keyword_##]",
+				dawnKeyword = "[##_var_dawn-keyword_##]",
+				nightKeyword = "[##_var_night-keyword_##]",
+				pageCoverKeyword = "[##_var_page-cover-keyword_##]",
+				fullscreenPageCoverKeyword = "[##_var_fullscreen-page-cover-keyword_##]",
+				disabledPageCoverKeyword = "[##_var_disabled-page-cover-keyword_##]",
+				altCoverKeyword = "[##_var_general-cover-keyword_##]",
+				secondCoverKeyword = "[##_var_second-cover-keyword_##]",
+				thirdCoverKeyword = "[##_var_third-cover-keyword_##]",
+				fourthCoverKeyword = "[##_var_fourth-cover-keyword_##]",
+				smallGalleryKeyword = "[##_var_small-gallery-keyword_##]",
+				galleryKeyword = "[##_var_gallery-keyword_##]",
+				largeGalleryKeyword = "[##_var_large-gallery-keyword_##]",
+				posterTypeKeyword = "[##_var_poster-type-keyword_##]",
+				cardTypeKeyword = "[##_var_card-type-keyword_##]",
+				textTypeKeyword = "[##_var_text-type-keyword_##]",
+				hiddenTextKeyword = "[##_var_hidden-text-keyword_##]",
+				showTextKeyword = "[##_var_show-text-keyword_##]",
+				serifKeyword = "[##_var_serif-keyword_##]",
+				sanSerifKeyword = "[##_var_san-serif-keyword_##]",
+				
+				tabSize = parseInt("<s_if_var_pro-code-tab>[##_var_pro-code-tab_##]</s_if_var_pro-code-tab><s_not_var_pro-code-tab>4</s_not_var_pro-code-tab>"),
+
+				sidebarButtonColor = "<s_if_var_sidebar-button-color>[##_var_sidebar-button-color_##]</s_if_var_sidebar-button-color><s_not_var_sidebar-button-color>transparent</s_not_var_sidebar-button-color>",
+				sidebarDawnButtonColor = "<s_if_var_sidebar-dawn-button-color>[##_var_sidebar-dawn-button-color_##]</s_if_var_sidebar-dawn-button-color><s_not_var_sidebar-dawn-button-color>transparent</s_not_var_sidebar-dawn-button-color>",
+				sidebarNightButtonColor = "<s_if_var_sidebar-night-button-color>[##_var_sidebar-night-button-color_##]</s_if_var_sidebar-night-button-color><s_not_var_sidebar-night-button-color>transparent</s_not_var_sidebar-night-button-color>",
+				sidebarHoverColor = "<s_if_var_sidebar-hover-color>[##_var_sidebar-hover-color_##]</s_if_var_sidebar-hover-color><s_not_var_sidebar-hover-color>transparent</s_not_var_sidebar-hover-color>",
+				sidebarDawnHoverColor = "<s_if_var_sidebar-dawn-hover-color>[##_var_sidebar-dawn-hover-color_##]</s_if_var_sidebar-dawn-hover-color><s_not_var_sidebar-dawn-hover-color>transparent</s_not_var_sidebar-dawn-hover-color>",
+				sidebarNightHoverColor = "<s_if_var_sidebar-night-hover-color>[##_var_sidebar-night-hover-color_##]</s_if_var_sidebar-night-hover-color><s_not_var_sidebar-night-hover-color>transparent</s_not_var_sidebar-night-hover-color>",
+				sidebarColor = "<s_if_var_sidebar-color>[##_var_sidebar-color_##]</s_if_var_sidebar-color><s_not_var_sidebar-color>transparent</s_not_var_sidebar-color>",
+				sidebarDawnColor = "<s_if_var_sidebar-dawn-color>[##_var_sidebar-dawn-color_##]</s_if_var_sidebar-dawn-color><s_not_var_sidebar-dawn-color>transparent</s_not_var_sidebar-dawn-color>",
+				sidebarNightColor = "<s_if_var_sidebar-night-color>[##_var_sidebar-night-color_##]</s_if_var_sidebar-night-color><s_not_var_sidebar-night-color>transparent</s_not_var_sidebar-night-color>",
+				sidebarImage = "<s_if_var_sidebar-image>[##_var_sidebar-image_##]</s_if_var_sidebar-image><s_not_var_sidebar-image>undefined</s_not_var_sidebar-image>",
+				sidebarDawnImage = "<s_if_var_sidebar-dawn-image>[##_var_sidebar-dawn-image_##]</s_if_var_sidebar-dawn-image><s_not_var_sidebar-dawn-image>undefined</s_not_var_sidebar-dawn-image>",
+				sidebarNightImage = "<s_if_var_sidebar-night-image>[##_var_sidebar-night-image_##]</s_if_var_sidebar-night-image><s_not_var_sidebar-night-image>undefined</s_not_var_sidebar-night-image>",
+				sidebarImgPosition = "[##_var_sidebar-image-position_##]",
+				sidebarImgSize = "[##_var_sidebar-image-size_##]",
+				sidebarImgRepeat = "[##_var_sidebar-image-repeat_##]",
+				
+				sidebarTrademark = "<s_if_var_sidebar-trademark>[##_var_sidebar-trademark_##]</s_if_var_sidebar-trademark><s_not_var_sidebar-trademark>undefined</s_not_var_sidebar-trademark>",
+				sidebarDawnTrademark = "<s_if_var_dawn-sidebar-trademark>[##_var_dawn-sidebar-trademark_##]</s_if_var_dawn-sidebar-trademark><s_not_var_dawn-sidebar-trademark>undefined</s_not_var_dawn-sidebar-trademark>",
+				sidebarNightTrademark = "<s_if_var_night-sidebar-trademark>[##_var_night-sidebar-trademark_##]</s_if_var_night-sidebar-trademark><s_not_var_night-sidebar-trademark>undefined</s_not_var_night-sidebar-trademark>",
+				
+				naverID = "<s_if_var_naver>[##_var_naver_##]</s_if_var_naver><s_not_var_naver>undefined</s_not_var_naver>";
+		</script>
+		<script async src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script.js?fcver=235013"></script>
+		<script async src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_sidebar.js?fcver=235013"></script>
+		<script async src="<s_if_var_cdn>https://cdn.jsdelivr.net/gh/kaniwari/space/ver/11.4test1/</s_if_var_cdn><s_not_var_cdn>./images/</s_not_var_cdn>script_appearance.js?fcver=235013"></script>
+	</body>
+</html>

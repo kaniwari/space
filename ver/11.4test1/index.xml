@@ -1,0 +1,1456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+	<information>
+		<name>프라치노 공간</name>
+		<version>2.3.5</version>
+		<description>
+			<![CDATA[프라치노 공간을 사용하여 당신의 콘텐츠를 돋보이게 만드는 것은 물론, 블로그의 무한한 가능성을 경험해 보세요.]]>
+		</description>
+		<license>
+			<![CDATA[Copyright and designed by Fraccino. All rights reserved.]]>
+		</license>
+	</information>
+	<author>
+		<name>프라치노</name>
+		<homepage>https://fraccinospace.tistory.com</homepage>
+		<email>fraccinospace@icloud.com</email>
+	</author>
+	<default>
+		<entriesOnPage>12</entriesOnPage>
+		<entriesOnList>12</entriesOnList>
+		<recentEntries>4</recentEntries>
+		<recentComments>4</recentComments>
+		<recentTrackbacks>4</recentTrackbacks>
+		<itemsOnGuestbook>5</itemsOnGuestbook>
+		<tagsInCloud>8</tagsInCloud>
+		<sortInCloud>1</sortInCloud>
+		<expandComment>1</expandComment>
+		<lengthOfRecentNotice>40</lengthOfRecentNotice>
+		<lengthOfRecentEntry>40</lengthOfRecentEntry>
+		<lengthOfRecentComment>40</lengthOfRecentComment>
+		<lengthOfRecentTrackback>40</lengthOfRecentTrackback>
+		<lengthOfLink>30</lengthOfLink>
+		<showListOnCategory>1</showListOnCategory>
+		<showListOnArchive>1</showListOnArchive>
+		<commentMessage>
+			<none>0</none>
+			<single>1</single>
+		</commentMessage>
+		<trackbackMessage>
+			<none>0</none>
+			<single>1</single>
+		</trackbackMessage>
+		<tree>
+			<color>000000</color>
+			<bgColor>ffffff</bgColor>
+			<activeColor>349aff</activeColor>
+			<activeBgColor>f4f4f4</activeBgColor>
+			<labelLength>27</labelLength>
+			<showValue>1</showValue>
+		</tree>
+		<contentWidth>728</contentWidth>
+		<cover>
+			<![CDATA[[ { "name": "slider-no-desc", "title": "", "dataType": "CUSTOM", "data": [ { "title": "원하는대로 꾸미는 공간", "summary": "티스토리에서 제공하는 커버를 이용하여 첫 페이지를 원하는대로 꾸밀 수 있습니다.", "url": "https://fraccinospace.tistory.com", "thumbnail": "https://raw.githubusercontent.com/kaniwari/fraccino_space/master/img/1.jpg" }, { "title": "시선을 방해하는 거슬림 없이", "summary": "프라치노 공간의 콘텐츠 우선 디자인은 오직 당신의 글에만 집중할 수 있게 해줍니다.", "url": "https://fraccinospace.tistory.com", "thumbnail": "https://raw.githubusercontent.com/kaniwari/fraccino_space/master/img/2.jpg" }, { "title": "콘텐츠를 드러내세요", "summary": "콘텐츠에 따라 블로그의 느낌이 달라집니다. 이제 진정한 개성인 콘텐츠를 드러내세요.", "url": "https://fraccinospace.tistory.com", "thumbnail": "https://raw.githubusercontent.com/kaniwari/fraccino_space/master/img/3.jpg" } ] }, { "name": "small-gallery-list", "title": "", "dataType": "CUSTOM", "data": [ { "title": "간직하고 싶은 추억들", "summary": "", "url": "https://fraccinospace.tistory.com", "thumbnail": "https://raw.githubusercontent.com/kaniwari/fraccino_space/master/img/4_modified1.jpg" }, { "title": "느끼지 못했던 여유로움", "summary": "", "url": "https://fraccinospace.tistory.com", "thumbnail": "https://raw.githubusercontent.com/kaniwari/fraccino_space/master/img/5.jpg" }, { "title": "보여주고 싶은 노하우", "summary": "", "url": "https://fraccinospace.tistory.com", "thumbnail": "https://raw.githubusercontent.com/kaniwari/fraccino_space/master/img/6.jpg" }, { "title": "모두 잘 보입니다", "summary": "", "url": "https://fraccinospace.tistory.com", "thumbnail": "https://raw.githubusercontent.com/kaniwari/fraccino_space/master/img/7.jpg" } ] }, { "name": "text-type-list", "title": "지금까지 올라온 글들", "dataType": "LIST", "data": { "category": "ALL", "size": 6 } } ]]]>
+		</cover>
+	</default>
+	<cover>
+		<item>
+			<name>customized-index</name>
+			<label>
+				<![CDATA[사용자화한 콘텐츠가 적용된 첫 페이지]]></label>
+			<description>
+				<![CDATA[첫 페이지의 콘텐츠를 원하는 것으로 사용자화할 수 있습니다. 단 이 커버 아이템은 맨 위에 있어야 합니다.]]>
+			</description>
+		</item>
+		<item>
+			<name>slider</name>
+			<label>
+				<![CDATA[슬라이드형]]></label>
+			<description>
+				<![CDATA[좌우로 스와이프할 수 있는 갤러리형 목록입니다.]]>
+			</description>
+		</item>
+		<item>
+			<name>fullscreen-slider</name>
+			<label>
+				<![CDATA[꽉 찬 슬라이드형]]></label>
+			<description>
+				<![CDATA[좌우로 스와이프할 수 있는 꽉 찬 갤러리형 목록입니다.]]>
+			</description>
+		</item>
+		<item>
+			<name>slider-no-desc</name>
+			<label>
+				<![CDATA[글 내용이 없는 슬라이드형]]></label>
+			<description>
+				<![CDATA[좌우로 스와이프할 수 있는 갤러리형 목록으로 글의 내용은 표시되지 않습니다.]]>
+			</description>
+		</item>
+		<item>
+			<name>fullscreen-slider-no-desc</name>
+			<label>
+				<![CDATA[글 내용이 없는 꽉 찬 슬라이드형]]></label>
+			<description>
+				<![CDATA[좌우로 스와이프할 수 있는 꽉 찬 갤러리형 목록으로 글의 내용은 표시되지 않습니다.]]>
+			</description>
+		</item>
+		<item>
+			<name>small-gallery-list</name>
+			<label>
+				<![CDATA[작은 갤러리형]]></label>
+			<description>
+				<![CDATA[글의 대표 이미지를 작게 표시할 수 있는 갤러리형 목록입니다.]]>
+			</description>
+		</item>
+		<item>
+			<name>gallery-list</name>
+			<label>
+				<![CDATA[일반 갤러리형]]></label>
+			<description>
+				<![CDATA[기본적으로 표시할 수 있는 갤러리형 목록입니다.]]>
+			</description>
+		</item>
+		<item>
+			<name>large-gallery-list</name>
+			<label>
+				<![CDATA[큰 갤러리형]]></label>
+			<description>
+				<![CDATA[글의 대표 이미지를 크게 표시할 수 있는 갤러리형 목록입니다.]]>
+			</description>
+		</item>
+		<item>
+			<name>poster-type-list</name>
+			<label>
+				<![CDATA[포스터형]]></label>
+			<description>
+				<![CDATA[글의 대표 이미지를 포스터처럼 표시할 수 있는 목록입니다.]]>
+			</description>
+		</item>
+		<item>
+			<name>small-gallery-list-hidden-text</name>
+			<label>
+				<![CDATA[글 제목이 숨겨진 작은 갤러리형]]></label>
+			<description>
+				<![CDATA[글의 대표 이미지를 작게 표시할 수 있는 갤러리형 목록으로 글 제목은 숨겨져 있습니다.]]>
+			</description>
+		</item>
+		<item>
+			<name>gallery-list-hidden-text</name>
+			<label>
+				<![CDATA[글 제목이 숨겨진 일반 갤러리형]]></label>
+			<description>
+				<![CDATA[기본적으로 표시할 수 있는 갤러리형 목록으로 글 제목은 숨겨져 있습니다.]]>
+			</description>
+		</item>
+		<item>
+			<name>large-gallery-list-hidden-text</name>
+			<label>
+				<![CDATA[글 제목이 숨겨진 큰 갤러리형]]></label>
+			<description>
+				<![CDATA[글의 대표 이미지를 크게 표시할 수 있는 갤러리형 목록으로 글 제목은 숨겨져 있습니다.]]>
+			</description>
+		</item>
+		<item>
+			<name>poster-type-list-hidden-text</name>
+			<label>
+				<![CDATA[글 제목이 숨겨진 포스터형]]></label>
+			<description>
+				<![CDATA[글의 대표 이미지를 포스터처럼 표시할 수 있는 목록으로 글 제목은 숨겨져 있습니다.]]>
+			</description>
+		</item>
+		<item>
+			<name>card-type-list</name>
+			<label>
+				<![CDATA[카드형]]></label>
+			<description>
+				<![CDATA[글의 가로형 대표 이미지와 함께 본문의 내용을 간략하게 표시할 수 있는 목록입니다.]]>
+			</description>
+		</item>
+		<item>
+			<name>text-type-list</name>
+			<label>
+				<![CDATA[텍스트형]]></label>
+			<description>
+				<![CDATA[본문의 내용을 간략하게 표시할 수 있는 목록입니다.]]>
+			</description>
+		</item>
+	</cover>
+	<variables>
+		<variablegroup name="일반">
+			<variable>
+				<name>appearance</name>
+				<label>
+					<![CDATA[모드]]></label>
+				<description>
+					<![CDATA[스킨의 전반적인 분위기를 설정합니다.]]>
+				</description>
+				<type>SELECT</type>
+				<option>
+					<![CDATA[[ { "name": "day", "label":"낮", "value":"day" }, { "name": "dawn", "label":"노을", "value":"dawn" }, { "name": "night", "label":"밤", "value":"night" }, { "name": "dynamic", "label":"시간대에 따라 자동 변경", "value":"dynamic" }, { "name": "day sysui", "label":"시스템 모드에 맞추기", "value":"day sysui" } ]]]>
+				</option>
+				<default>day sysui</default>
+			</variable>
+			<variable>
+				<name>cdn</name>
+				<label>
+					<![CDATA[CDN 사용]]></label>
+				<description>
+					<![CDATA[스킨 로드를 효율적으로 처리하기 위해 콘텐츠 전송 네트워크를 사용합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default>true</default>
+			</variable>
+			<variable>
+				<name>load-stylecss</name>
+				<label>
+					<![CDATA[style.css 사용]]></label>
+				<description>
+					<![CDATA[style.css 스타일 시트 파일을 사용합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>theme-color</name>
+				<label>
+					<![CDATA[테마 컬러]]></label>
+				<description>
+					<![CDATA[특정 브라우저의 툴바 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[transparent]]>
+				</default>
+			</variable>
+			<variable>
+				<name>day-color</name>
+				<label>
+					<![CDATA[낮일 때 링크 호버]]></label>
+				<description>
+					<![CDATA[모양새가 낮일 때 링크의 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[#349aff]]>
+				</default>
+			</variable>
+			<variable>
+				<name>dawn-color</name>
+				<label>
+					<![CDATA[노을일 때 링크 호버]]></label>
+				<description>
+					<![CDATA[모양새가 노을일 때 링크의 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[#2284d9]]>
+				</default>
+			</variable>
+			<variable>
+				<name>night-color</name>
+				<label>
+					<![CDATA[밤일 때 링크 호버]]></label>
+				<description>
+					<![CDATA[모양새가 밤일 때 링크의 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[#74d5ff]]>
+				</default>
+			</variable>
+		</variablegroup>
+		<variablegroup name="상단 가운데 영역의 블로그 로고">
+			<variable>
+				<name>trademark</name>
+				<label>
+					<![CDATA[기본]]></label>
+				<description>
+					<![CDATA[자신의 블로그 이름을 텍스트 대신에 로고 이미지로 표시할 수 있습니다.]]>
+				</description>
+				<type>IMAGE</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>dawn-trademark</name>
+				<label>
+					<![CDATA[노을일 때]]></label>
+				<description>
+					<![CDATA[노을 모드일 때 사용되는 블로그 로고 이미지입니다.]]>
+				</description>
+				<type>IMAGE</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>night-trademark</name>
+				<label>
+					<![CDATA[밤일 때]]></label>
+				<description>
+					<![CDATA[밤 모드일 때 사용되는 블로그 로고 이미지입니다.]]>
+				</description>
+				<type>IMAGE</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>cover-trademark</name>
+				<label>
+					<![CDATA[대표 커버 위]]></label>
+				<description>
+					<![CDATA[대표 커버가 표시될 때 사용되는 블로그 로고 이미지입니다.]]>
+				</description>
+				<type>IMAGE</type>
+				<option />
+				<default></default>
+			</variable>
+		</variablegroup>
+		<variablegroup name="글 목록">
+			<variable>
+				<name>list-appearance</name>
+				<label>
+					<![CDATA[모드]]></label>
+				<description>
+					<![CDATA[목록 페이지의 모드를 설정합니다.]]>
+				</description>
+				<type>SELECT</type>
+				<option>
+					<![CDATA[[ { "name": "small-gallery", "label":"작은 갤러리형", "value":"gallery small" }, { "name": "gallery", "label":"일반 갤러리형", "value":"gallery" }, { "name": "large-gallery", "label":"큰 갤러리형", "value":"gallery large" }, { "name": "poster", "label":"포스터형", "value":"gallery poster-type" }, { "name": "card", "label":"카드형", "value":"card-type" }, { "name": "text", "label":"텍스트형", "value":"text-type" } ]]]>
+				</option>
+				<default>gallery</default>
+			</variable>
+			<variable>
+				<name>hidden-text</name>
+				<label>
+					<![CDATA[목록의 글 제목 숨기기]]></label>
+				<description>
+					<![CDATA[갤러리 목록에서 글의 제목을 표시하지 않습니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>view-more</name>
+				<label>
+					<![CDATA[목록 더 보기 버튼]]></label>
+				<description>
+					<![CDATA[목록 더 보기 버튼을 사용합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default>true</default>
+			</variable>
+		</variablegroup>
+		<variablegroup name="대표 커버 이미지">
+			<variable>
+				<name>page-cover</name>
+				<label>
+					<![CDATA[모드]]></label>
+				<description>
+					<![CDATA[대표 커버 이미지 모드를 선택합니다.]]>
+				</description>
+				<type>SELECT</type>
+				<option>
+					<![CDATA[[ { "name": "disable", "label": "비활성화", "value": "" }, { "name": "enable", "label": "일반", "value": "page-cover-support" }, { "name": "enable-wfull", "label": "전체 화면", "value": "page-cover-support fullscreen-page-cover" } ]]]>
+				</option>
+				<default>page-cover-support</default>
+			</variable>
+			<variable>
+				<name>select-alt-cover</name>
+				<label>
+					<![CDATA[대체 커버 이미지]]></label>
+				<description>
+					<![CDATA[글의 커버에 표시할 대표 이미지가 없을 경우 대체 이미지를 표시할 수 있습니다. 어떠한 대체 커버를 사용할 것인지 선택합니다.]]>
+				</description>
+				<type>SELECT</type>
+				<option>
+					<![CDATA[[ { "name": "alt1", "label": "기본 대체 커버", "value": "alt1" }, { "name": "alt2", "label": "대체 커버 2", "value": "alt2" }, { "name": "alt3", "label": "대체 커버 3", "value": "alt3" }, { "name": "alt4", "label": "대체 커버 4", "value": "alt4" } ]]]>
+				</option>
+				<default>alt1</default>
+			</variable>
+			<variable>
+				<name>page-cover-image</name>
+				<label>
+					<![CDATA[기본 대체 커버]]></label>
+				<description>
+					<![CDATA[기본 대체 커버의 이미지를 선택합니다.]]>
+				</description>
+				<type>IMAGE</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>second-cover</name>
+				<label>
+					<![CDATA[대체 커버 2]]></label>
+				<description>
+					<![CDATA[대체 커버 2의 이미지를 선택합니다.]]>
+				</description>
+				<type>IMAGE</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>third-cover</name>
+				<label>
+					<![CDATA[대체 커버 3]]></label>
+				<description>
+					<![CDATA[대체 커버 3의 이미지를 선택합니다.]]>
+				</description>
+				<type>IMAGE</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>fourth-cover</name>
+				<label>
+					<![CDATA[대체 커버 4]]></label>
+				<description>
+					<![CDATA[대체 커버 4의 이미지를 선택합니다.]]>
+				</description>
+				<type>IMAGE</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>page-altcover-only</name>
+				<label>
+					<![CDATA[대체 커버 이미지만 사용]]></label>
+				<description>
+					<![CDATA[글의 커버 이미지를 사용할 때 대체 이미지만 표시합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+		</variablegroup>
+		<variablegroup name="글">
+			<variable>
+				<name>progress-bar</name>
+				<label>
+					<![CDATA[진행 바 표시]]></label>
+				<description>
+					<![CDATA[글을 읽을 때 진행률을 표시합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>author</name>
+				<label>
+					<![CDATA[글 작성자 표시]]></label>
+				<description>
+					<![CDATA[글의 제목과 내용 사이에 글 작성자를 표시합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>tags-trail</name>
+				<label>
+					<![CDATA[태그 표시]]></label>
+				<description>
+					<![CDATA[글 맨 아래에 태그를 표시합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default>true</default>
+			</variable>
+			<variable>
+				<name>recommendation-alert</name>
+				<label>
+					<![CDATA[추천 알림 표시]]></label>
+				<description>
+					<![CDATA[스킨이 데스크탑 모드일 때 추천 알림을 표시합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>expanded-image</name>
+				<label>
+					<![CDATA[미디어 확장]]></label>
+				<description>
+					<![CDATA[미디어를 지정된 글의 너비보다 크게 확장합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default>true</default>
+			</variable>
+			<variable>
+				<name>edge-image</name>
+				<label>
+					<![CDATA[미디어 좌우여백 제거]]></label>
+				<description>
+					<![CDATA[모바일 모드일 때 미디어에 좌우여백을 제거하여 미디어를 좀 더 크게 합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default>true</default>
+			</variable>
+			<variable>
+				<name>justify</name>
+				<label>
+					<![CDATA[좌우 정렬]]></label>
+				<description>
+					<![CDATA[글의 정렬을 좌우 정렬로 설정합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>serif</name>
+				<label>
+					<![CDATA[바탕체]]></label>
+				<description>
+					<![CDATA[글을 바탕체로 표시합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>recommended-width</name>
+				<label>
+					<![CDATA[권장 너비 제한]]></label>
+				<description>
+					<![CDATA[글의 너비와 확장 미디어의 너비를 권장 수준으로 제한합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default>true</default>
+			</variable>
+			<variable>
+				<name>article-width</name>
+				<label>
+					<![CDATA[글의 너비 (px)]]></label>
+				<description>
+					<![CDATA[글의 너비를 설정합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default>728</default>
+			</variable>
+			<variable>
+				<name>expanded-image-width</name>
+				<label>
+					<![CDATA[확장 미디어의 너비 (px)]]></label>
+				<description>
+					<![CDATA[확장 미디어의 너비를 설정합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default>1100</default>
+			</variable>
+			<variable>
+				<name>day-page-color</name>
+				<label>
+					<![CDATA[낮일 때 글의 링크]]></label>
+				<description>
+					<![CDATA[모양새가 낮일 때 글 링크의 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[#647788]]>
+				</default>
+			</variable>
+			<variable>
+				<name>dawn-page-color</name>
+				<label>
+					<![CDATA[노을일 때 글의 링크]]></label>
+				<description>
+					<![CDATA[모양새가 노을일 때 글 링크의 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[#59656d]]>
+				</default>
+			</variable>
+			<variable>
+				<name>night-page-color</name>
+				<label>
+					<![CDATA[밤일 때 글의 링크]]></label>
+				<description>
+					<![CDATA[모양새가 밤일 때 글 링크의 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[#748a96]]>
+				</default>
+			</variable>
+		</variablegroup>
+		<variablegroup name="개발 언어 하이라이트 (highlight.js)">
+			<variable>
+				<name>pro-code</name>
+				<label>
+					<![CDATA[사용]]></label>
+				<description>
+					<![CDATA[개발 언어와 관련된 코드를 더 읽기 쉽게 변경합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default>true</default>
+			</variable>
+			<variable>
+				<name>auto-code</name>
+				<label>
+					<![CDATA[코드 자동 감지]]></label>
+				<description>
+					<![CDATA[개발 언어와 관련된 코드를 자동으로 감지합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default>true</default>
+			</variable>
+			<variable>
+				<name>pro-code-line</name>
+				<label>
+					<![CDATA[번호 사용]]></label>
+				<description>
+					<![CDATA[개발 언어 하이라이트를 사용할 때 줄 번호를 표시합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default>true</default>
+			</variable>
+			<variable>
+				<name>pro-code-stripe</name>
+				<label>
+					<![CDATA[번호 사용 시 줄무늬]]></label>
+				<description>
+					<![CDATA[개발 언어 하이라이트에서 줄 번호를 표시할 때 줄무늬로 각 줄을 구분합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default>true</default>
+			</variable>
+			<variable>
+				<name>pro-code-overflow</name>
+				<label>
+					<![CDATA[일부 번호에 줄 바꿈]]></label>
+				<description>
+					<![CDATA[개발 언어 하이라이트를 사용할 때 긴 줄의 코드일 경우 줄을 자동으로 바꿉니다. 단 너무 긴 단어가 있을 경우 줄이 바뀌지 않을 수 있습니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default>true</default>
+			</variable>
+			<variable>
+				<name>pro-code-expand</name>
+				<label>
+					<![CDATA[너비 확장]]></label>
+				<description>
+					<![CDATA[개발 언어 하이라이트를 사용할 때 조금 더 넓은 너비를 사용합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>pro-code-tab</name>
+				<label>
+					<![CDATA[탭 폭]]></label>
+				<description>
+					<![CDATA[개발 언어 하이라이트를 사용할 때 탭의 폭을 설정합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default>4</default>
+			</variable>
+		</variablegroup>
+		<variablegroup name="활동 영역">
+			<variable>
+				<name>activities</name>
+				<label>
+					<![CDATA[기본 모드]]></label>
+				<description>
+					<![CDATA[기본으로 표시할 글의 활동 영역을 설정합니다.]]>
+				</description>
+				<type>SELECT</type>
+				<option>
+					<![CDATA[[ { "name": "show-comments", "label":"댓글", "value":"show-comments" }, { "name": "show-export", "label":"공유하기", "value":"show-export" }, { "name": "show-info", "label":"다른 글", "value":"show-info" } ]]]>
+				</option>
+				<default>show-info</default>
+			</variable>
+			<variable>
+				<name>count-comments</name>
+				<label>
+					<![CDATA[댓글 개수 표시]]></label>
+				<description>
+					<![CDATA[댓글의 개수를 표시합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>reversed-comments</name>
+				<label>
+					<![CDATA[댓글 순서 반전]]></label>
+				<description>
+					<![CDATA[댓글 순서를 반전시킵니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+		</variablegroup>
+		<variablegroup name="카테고리별 모드">
+			<variable>
+				<name>day-keyword</name>
+				<label>
+					<![CDATA[낮]]></label>
+				<description>
+					<![CDATA[특정 카테고리 목록과 글에서는 낮 모드를 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>dawn-keyword</name>
+				<label>
+					<![CDATA[노을]]></label>
+				<description>
+					<![CDATA[특정 카테고리 목록과 글에서는 노을 모드를 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>night-keyword</name>
+				<label>
+					<![CDATA[밤]]></label>
+				<description>
+					<![CDATA[특정 카테고리 목록과 글에서는 밤 모드를 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>page-cover-keyword</name>
+				<label>
+					<![CDATA[대표 커버]]></label>
+				<description>
+					<![CDATA[특정 카테고리 목록의 글에서는 대표 커버 이미지를 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>fullscreen-page-cover-keyword</name>
+				<label>
+					<![CDATA[꽉 찬 대표 커버]]></label>
+				<description>
+					<![CDATA[특정 카테고리 목록의 글에서는 꽉 찬 대표 커버 이미지를 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>disabled-page-cover-keyword</name>
+				<label>
+					<![CDATA[대표 커버 비활성화]]></label>
+				<description>
+					<![CDATA[특정 카테고리 목록의 글에서는 대표 커버 이미지를 비활성화합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>general-cover-keyword</name>
+				<label>
+					<![CDATA[기본 대체 커버만 사용]]></label>
+				<description>
+					<![CDATA[특정 카테고리 목록의 글에서는 대체 커버 이미지 1을 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>second-cover-keyword</name>
+				<label>
+					<![CDATA[대체 커버 2만 사용]]></label>
+				<description>
+					<![CDATA[특정 카테고리 목록의 글에서는 대체 커버 이미지 2를 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>third-cover-keyword</name>
+				<label>
+					<![CDATA[대체 커버 3만 사용]]></label>
+				<description>
+					<![CDATA[특정 카테고리 목록의 글에서는 대체 커버 이미지 3을 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>fourth-cover-keyword</name>
+				<label>
+					<![CDATA[대체 커버 4만 사용]]></label>
+				<description>
+					<![CDATA[특정 카테고리 목록의 글에서는 대체 커버 이미지 4를 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>small-gallery-keyword</name>
+				<label>
+					<![CDATA[작은 갤러리 목록]]></label>
+				<description>
+					<![CDATA[특정 카테고리에서는 작은 갤러리형 목록을 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>gallery-keyword</name>
+				<label>
+					<![CDATA[일반 갤러리 목록]]></label>
+				<description>
+					<![CDATA[특정 카테고리에서는 일반 갤러리형 목록을 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>large-gallery-keyword</name>
+				<label>
+					<![CDATA[큰 갤러리 목록]]></label>
+				<description>
+					<![CDATA[특정 카테고리에서는 큰 갤러리형 목록을 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>poster-type-keyword</name>
+				<label>
+					<![CDATA[포스트형 목록]]></label>
+				<description>
+					<![CDATA[특정 카테고리에서는 포스트형 목록을 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>card-type-keyword</name>
+				<label>
+					<![CDATA[카드형 목록]]></label>
+				<description>
+					<![CDATA[특정 카테고리에서는 카드형 목록을 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>text-type-keyword</name>
+				<label>
+					<![CDATA[텍스트형 목록]]></label>
+				<description>
+					<![CDATA[특정 카테고리에서는 텍스트형 목록을 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>hidden-text-keyword</name>
+				<label>
+					<![CDATA[글 제목 숨김]]></label>
+				<description>
+					<![CDATA[특정 카테고리에서는 글의 제목이 표시되지 않습니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>show-text-keyword</name>
+				<label>
+					<![CDATA[글 제목 표시]]></label>
+				<description>
+					<![CDATA[특정 카테고리에서는 글의 제목이 표시됩니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>serif-keyword</name>
+				<label>
+					<![CDATA[바탕체]]></label>
+				<description>
+					<![CDATA[특정 카테고리 목록의 글에서는 바탕체를 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>san-serif-keyword</name>
+				<label>
+					<![CDATA[돋움체]]></label>
+				<description>
+					<![CDATA[특정 카테고리 목록의 글에서는 돋움체를 사용합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+		</variablegroup>
+		<variablegroup name="고정형 사이드바">
+			<variable>
+				<name>fixed-sidebar</name>
+				<label>
+					<![CDATA[사용]]></label>
+				<description>
+					<![CDATA[브라우저의 윈도우 너비가 넓을 때 사이드바를 고정합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>sidebar-color</name>
+				<label>
+					<![CDATA[기본 배경 컬러]]></label>
+				<description>
+					<![CDATA[고정형 사이드바의 배경 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[transparent]]>
+				</default>
+			</variable>
+			<variable>
+				<name>sidebar-button-color</name>
+				<label>
+					<![CDATA[기본 모듈 버튼]]></label>
+				<description>
+					<![CDATA[고정형 사이드바 모듈 버튼의 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[transparent]]>
+				</default>
+			</variable>
+			<variable>
+				<name>sidebar-hover-color</name>
+				<label>
+					<![CDATA[기본 모듈 버튼 호버]]></label>
+				<description>
+					<![CDATA[고정형 사이드바 모듈 버튼의 마우스 커서르 올리거나 탭했을 때 모듈 버튼의 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[transparent]]>
+				</default>
+			</variable>
+			<variable>
+				<name>sidebar-dawn-color</name>
+				<label>
+					<![CDATA[노을일 때 배경 컬러]]></label>
+				<description>
+					<![CDATA[고정형 사이드바의 배경 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[transparent]]>
+				</default>
+			</variable>
+			<variable>
+				<name>sidebar-dawn-button-color</name>
+				<label>
+					<![CDATA[노을일 때 모듈 버튼]]></label>
+				<description>
+					<![CDATA[고정형 사이드바 모듈 버튼의 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[transparent]]>
+				</default>
+			</variable>
+			<variable>
+				<name>sidebar-dawn-hover-color</name>
+				<label>
+					<![CDATA[노을일 때 모듈 버튼 호버]]></label>
+				<description>
+					<![CDATA[고정형 사이드바 모듈 버튼의 마우스 커서르 올리거나 탭했을 때 모듈 버튼의 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[transparent]]>
+				</default>
+			</variable>
+			<variable>
+				<name>sidebar-night-color</name>
+				<label>
+					<![CDATA[밤일 때 배경 컬러]]></label>
+				<description>
+					<![CDATA[고정형 사이드바의 배경 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[transparent]]>
+				</default>
+			</variable>
+			<variable>
+				<name>sidebar-night-button-color</name>
+				<label>
+					<![CDATA[밤일 때 모듈 버튼]]></label>
+				<description>
+					<![CDATA[고정형 사이드바 모듈 버튼의 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[transparent]]>
+				</default>
+			</variable>
+			<variable>
+				<name>sidebar-night-hover-color</name>
+				<label>
+					<![CDATA[밤일 때 모듈 버튼 호버]]></label>
+				<description>
+					<![CDATA[고정형 사이드바 모듈 버튼의 마우스 커서르 올리거나 탭했을 때 모듈 버튼의 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[transparent]]>
+				</default>
+			</variable>
+			<variable>
+				<name>sidebar-image</name>
+				<label>
+					<![CDATA[기본 배경 이미지]]></label>
+				<description>
+					<![CDATA[고정형 사이드바의 배경 이미지를 사용자화합니다.]]>
+				</description>
+				<type>IMAGE</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>sidebar-dawn-image</name>
+				<label>
+					<![CDATA[노을일 때 배경 이미지]]></label>
+				<description>
+					<![CDATA[고정형 사이드바의 배경 이미지를 사용자화합니다.]]>
+				</description>
+				<type>IMAGE</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>sidebar-night-image</name>
+				<label>
+					<![CDATA[밤일 때 배경 이미지]]></label>
+				<description>
+					<![CDATA[고정형 사이드바의 배경 이미지를 사용자화합니다.]]>
+				</description>
+				<type>IMAGE</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>sidebar-image-position</name>
+				<label>
+					<![CDATA[배경 이미지 위치]]></label>
+				<description>
+					<![CDATA[고정형 사이드바 배경 이미지의 위치를 선택합니다.]]>
+				</description>
+				<type>SELECT</type>
+				<option>
+					<![CDATA[[ { "name": "50% 0", "label":"위", "value":"50% 0" }, { "name": "50% 50%", "label":"가운데", "value":"50% 50%" }, { "name": "50% 100%", "label":"아래", "value":"50% 100%" } ]]]>
+				</option>
+				<default>50% 50%</default>
+			</variable>
+			<variable>
+				<name>sidebar-image-size</name>
+				<label>
+					<![CDATA[배경 이미지 크기]]></label>
+				<description>
+					<![CDATA[고정형 사이드바 배경 이미지의 크기를 선택합니다.]]>
+				</description>
+				<type>SELECT</type>
+				<option>
+					<![CDATA[[ { "name": "contain", "label":"사이드바에 맞추기", "value":"contain" }, { "name": "cover", "label":"꽉 차게", "value":"cover" } ]]]>
+				</option>
+				<default>cover</default>
+			</variable>
+			<variable>
+				<name>sidebar-image-repeat</name>
+				<label>
+					<![CDATA[배경 이미지 반복]]></label>
+				<description>
+					<![CDATA[고정형 사이드바 배경 이미지를 패턴화합니다.]]>
+				</description>
+				<type>SELECT</type>
+				<option>
+					<![CDATA[[ { "name": "no-repeat", "label":"없음", "value":"no-repeat" }, { "name": "repeat", "label":"전체 반복", "value":"repeat" } ]]]>
+				</option>
+				<default>no-repeat</default>
+			</variable>
+			<variable>
+				<name>sidebar-position</name>
+				<label>
+					<![CDATA[사이드바 위치]]></label>
+				<description>
+					<![CDATA[고정형 사이드바의 위치를 지정합니다.]]>
+				</description>
+				<type>SELECT</type>
+				<option>
+					<![CDATA[[ { "name": "sidebar-left", "label":"왼쪽", "value":"sidebar-left" }, { "name": "sidebar-right", "label":"오른쪽", "value":"sidebar-right" } ]]]>
+				</option>
+				<default>sidebar-left</default>
+			</variable>
+			<variable>
+				<name>sidebar-order</name>
+				<label>
+					<![CDATA[사이드바 모듈 순서]]></label>
+				<description>
+					<![CDATA[고정형 사이드바 모듈의 순서를 지정합니다.]]>
+				</description>
+				<type>SELECT</type>
+				<option>
+					<![CDATA[[ { "name": "sidebar-first", "label":"사이드바 1에서 사이드바 2", "value":"sidebar-first" }, { "name": "blog-info-first", "label":"사이드바 2에서 사이드바 1", "value":"blog-info-first" } ]]]>
+				</option>
+				<default>sidebar-first</default>
+			</variable>
+		</variablegroup>
+		<variablegroup name="고정형 사이드바 영역의 블로그 로고">
+			<variable>
+				<name>sidebar-trademark</name>
+				<label>
+					<![CDATA[기본]]></label>
+				<description>
+					<![CDATA[고정형 사이드바 영역에 자신의 블로그 이름을 텍스트 대신에 로고 이미지로 표시할 수 있습니다.]]>
+				</description>
+				<type>IMAGE</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>dawn-sidebar-trademark</name>
+				<label>
+					<![CDATA[노을일 때]]></label>
+				<description>
+					<![CDATA[노을 모드일 때 고정형 사이드바 영역에 사용되는 블로그 로고 이미지입니다.]]>
+				</description>
+				<type>IMAGE</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>night-sidebar-trademark</name>
+				<label>
+					<![CDATA[밤일 때]]></label>
+				<description>
+					<![CDATA[밤 모드일 때 고정형 사이드바 영역에 사용되는 블로그 로고 이미지입니다.]]>
+				</description>
+				<type>IMAGE</type>
+				<option />
+				<default></default>
+			</variable>
+		</variablegroup>
+		<variablegroup name="사이드바 모듈">
+			<variable>
+				<name>post-module-type</name>
+				<label>
+					<![CDATA[최근/인기 글 모듈 모드]]></label>
+				<description>
+					<![CDATA[최근/인기 글의 모듈을 어떻게 표시할 것인지 선택합니다.]]>
+				</description>
+				<type>SELECT</type>
+				<option>
+					<![CDATA[[ { "name": "general-module-type", "label":"일반", "value":"general-module-type" }, { "name": "thumbnail-module-type", "label":"미리보기 이미지 포함", "value":"thumbnail-module-type" } ]]]>
+				</option>
+				<default>general-module-type</default>
+			</variable>
+			<variable>
+				<name>index-button</name>
+				<label>
+					<![CDATA[첫 페이지로 이동 버튼]]></label>
+				<description>
+					<![CDATA[사이드바에 첫 페이지로 이동 버튼을 표시합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>category</name>
+				<label>
+					<![CDATA[하위 카테고리 접기]]></label>
+				<description>
+					<![CDATA[사이드바의 카테고리 모듈에서 하위 카테고리를 기본값으로 접을 것인지 선택합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default>true</default>
+			</variable>
+			<variable>
+				<name>notice</name>
+				<label>
+					<![CDATA[공지 전체 보기 버튼]]></label>
+				<description>
+					<![CDATA[사이드바의 공지사항 모듈에서 전체 보기 버튼을 사용할 것인지 선택합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>tag</name>
+				<label>
+					<![CDATA[태그 전체 보기 버튼]]></label>
+				<description>
+					<![CDATA[사이드바의 태그 모듈에서 전체 보기 버튼을 사용할 것인지 선택합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+		</variablegroup>
+		<variablegroup name="블로그 정보의 배경">
+			<variable>
+				<name>jacket-color</name>
+				<label>
+					<![CDATA[배경 컬러]]></label>
+				<description>
+					<![CDATA[블로그 정보의 배경 컬러를 사용자화합니다.]]>
+				</description>
+				<type>COLOR</type>
+				<option />
+				<default>
+					<![CDATA[transparent]]>
+				</default>
+			</variable>
+			<variable>
+				<name>jacket-image</name>
+				<label>
+					<![CDATA[배경 이미지]]></label>
+				<description>
+					<![CDATA[블로그 정보의 배경 이미지를 사용자화합니다.]]>
+				</description>
+				<type>IMAGE</type>
+				<option />
+				<default></default>
+			</variable>
+		</variablegroup>
+		<variablegroup name="meta 태그">
+			<variable>
+				<name>meta1</name>
+				<label>
+					<![CDATA[첫 번째 줄]]></label>
+				<description>
+					<![CDATA[고유 메타 태그를 설정합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>meta2</name>
+				<label>
+					<![CDATA[두 번째 줄]]></label>
+				<description>
+					<![CDATA[고유 메타 태그를 설정합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>meta3</name>
+				<label>
+					<![CDATA[세 번째 줄]]></label>
+				<description>
+					<![CDATA[고유 메타 태그를 설정합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>meta4</name>
+				<label>
+					<![CDATA[네 번째 줄]]></label>
+				<description>
+					<![CDATA[고유 메타 태그를 설정합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+		</variablegroup>
+		<variablegroup name="네이버 이웃">
+			<variable>
+				<name>naver</name>
+				<label>
+					<![CDATA[네이버 ID]]></label>
+				<description>
+					<![CDATA[네이버 열린이웃을 설정하려면 사용 가능한 네이버 ID를 입력하세요.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+		</variablegroup>
+		<variablegroup name="Google AdSense">
+			<variable>
+				<name>adsense-id</name>
+				<label>
+					<![CDATA[google_ad_client]]></label>
+				<description>
+					<![CDATA[Google AdSense에서 발급된 ID를 입력하세요.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>auto-adsense</name>
+				<label>
+					<![CDATA[자동 광고]]></label>
+				<description>
+					<![CDATA[Google AdSense의 자동 광고를 사용할 것인지 선택합니다.]]>
+				</description>
+				<type>BOOL</type>
+				<option />
+				<default></default>
+			</variable>
+		</variablegroup>
+		<variablegroup name="사업자 정보">
+			<variable>
+				<name>company-title</name>
+				<label>
+					<![CDATA[상호명]]></label>
+				<description>
+					<![CDATA[상호명을 입력합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>company-name</name>
+				<label>
+					<![CDATA[대표자 성명]]></label>
+				<description>
+					<![CDATA[대표자 성명을 입력합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>company-address</name>
+				<label>
+					<![CDATA[주소]]></label>
+				<description>
+					<![CDATA[상호의 주소를 입력합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>company-phone</name>
+				<label>
+					<![CDATA[전화번호]]></label>
+				<description>
+					<![CDATA[상호의 전화번호를 입력합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>company-email</name>
+				<label>
+					<![CDATA[이메일]]></label>
+				<description>
+					<![CDATA[상호의 이메일을 입력합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>company-code</name>
+				<label>
+					<![CDATA[사업자등록번호]]></label>
+				<description>
+					<![CDATA[상호의 사업자등록번호를 입력합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>company-selling-code</name>
+				<label>
+					<![CDATA[통신판매신고번호]]></label>
+				<description>
+					<![CDATA[상호의 통신판매신고번호를 입력합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+			<variable>
+				<name>company-agreement</name>
+				<label>
+					<![CDATA[사이버몰 이용약관 URL]]></label>
+				<description>
+					<![CDATA[상호의 사이버몰 이용약관의 URL을 입력합니다.]]>
+				</description>
+				<type>STRING</type>
+				<option />
+				<default></default>
+			</variable>
+		</variablegroup>
+	</variables>
+</skin>
