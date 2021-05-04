@@ -1,4 +1,5 @@
-/*! Polyfill MOD (classList) | MIT *
+/*
+ Polyfill MOD (classList) | MIT *
 http://purl.eligrey.com/github/classList.js/blob/master/classList.js !*/
 "classList"in document.createElement("_")?!function(){var b=document.createElement("_");b.classList.add("c1","c2");if(!b.classList.contains("c2")){var a=function(a){var b=DOMTokenList.prototype[a];DOMTokenList.prototype[a]=function(a){for(var g=-1,h=arguments.length;++g<h;)a=arguments[g],b.call(this,a)}};a("add");a("remove")}b.classList.toggle("c1",!0);if(!b.classList.contains("c1")){var c=DOMTokenList.prototype.toggle;DOMTokenList.prototype.toggle=function(a,b){return 1 in arguments&&!this.contains(a)===
 !b?b:c.call(this,a)}}b=null}():"Element"in view&&function(b){var a=Array.prototype.indexOf,c=function(a,b){this.name=a;this.code=DOMException[a];this.message=b};c.prototype=Error.prototype;var f=function(b,h){if(""===h)throw new c("SYNTAX_ERR","An invalid or illegal string was specified");if(/\s/.test(h))throw new c("INVALID_CHARACTER_ERR","String contains an invalid character");return a.call(b,h)},e=function(a){var b=(a.getAttribute("class")||"").trim();if(b){b=b.split(/\s+/);for(var g=-1,c=b.length;++g<
